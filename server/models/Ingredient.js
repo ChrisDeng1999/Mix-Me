@@ -5,7 +5,7 @@ const ingredientSchema = new Schema({
 
   ingredientType: String,
 
-  alcholProof: INT,
+  alcholProof: Number,
 });
 
 const Ingredient = model("Ingredient", ingredientSchema);
