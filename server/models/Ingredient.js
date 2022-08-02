@@ -1,11 +1,12 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const ingredientSchema = new Schema ({
-    ingredientName: String,
-    ingredientType: String,
-  
+const ingredientSchema = new Schema({
+  ingredientName: String,
 
+  ingredientType: String,
 
-})
+  alcholProof: INT,
+});
 
-module.exports = ingredientSchema;
+const Ingredient = model("Ingredient", ingredientSchema);
+module.exports = Ingredient;
