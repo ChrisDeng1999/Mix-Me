@@ -8,4 +8,9 @@ import Auth from '../utils/auth';
 
 
 
+const Signup = () => {
+    return(
+    <div>vombo</div>)
+}
+
 export default Signup;

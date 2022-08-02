@@ -6,4 +6,10 @@ import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 
+
+const Login = () => {
+    return(
+    <div>bombo</div>)
+}
+
 export default Login;

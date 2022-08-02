@@ -11,7 +11,10 @@ const drinkSchema = new Schema ({
         trim: true,
     },
     drinkIngredients: [
-
+        { 
+            type: Schema.Types.ObjectId,
+            ref: 'Ingredient',
+        },
     ],
     createdAt: {
         type: Date,
