@@ -4,8 +4,7 @@ const { Schema, model } = require('mongoose');
 const spiritSchema = new Schema ({
     spiritName: String,
     spiritType: String,
-    alcoholProof: INT,
-
+    alcoholProof: Number,
 })
 
 const Spirit = model('Spirit', spiritSchema);
