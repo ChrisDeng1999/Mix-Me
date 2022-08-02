@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Drink, Ingredient, Review } = require('../models');
+const { User, Drink, Ingredient, Review, Spirit } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -11,10 +11,14 @@ const resolvers = {
                 path: 'classes',
                 populate: ''
             });
-        }
+        },
+        Ingredient: async () => {
+            return Ingredient.find({});
+        }, 
 
-
-
+        Spirit: async () => {
+            return Spirit.find({});
+        }, 
     },
 
 
