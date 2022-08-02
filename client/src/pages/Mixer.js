@@ -1,7 +1,7 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+// import { useQuery } from '@apollo/client';
 
-import DrinkIngredients from '../components/DrinkIngredients';
+// import DrinkIngredients from '../components/DrinkIngredients';
 
 
 
