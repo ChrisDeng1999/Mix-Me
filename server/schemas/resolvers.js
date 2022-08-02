@@ -7,8 +7,8 @@ const resolvers = {
 
     Query: {
         User: async () => {
-            return await User.find({}).populate('Drinks').populate({
-                path: 'classes',
+            return await User.find({}).populate('Drink').populate({
+                path: 'Drink',
                 populate: ''
             });
         },
