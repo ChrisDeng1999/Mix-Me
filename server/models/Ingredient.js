@@ -9,3 +9,5 @@ const ingredientSchema = new Schema({
 const Ingredient = model("Ingredient", ingredientSchema);
 
 module.exports = Ingredient;
+
+
