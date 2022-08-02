@@ -10,8 +10,22 @@ import React from 'react';
 
 
 const Signup = () => {
-    return(
-    <div>vombo</div>)
+    return (
+        <div>
+            <div class="form-group">
+                <label for="usr">Email:</label>
+                <input type="text" class="form-control" id="email"></input>
+            </div>
+            <div class="form-group">
+                <label for="usr">Username:</label>
+                <input type="text" class="form-control" id="usr"></input>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd"></input>
+            </div>
+        </div>
+    )
 }
 
 export default Signup;
