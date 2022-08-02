@@ -17,6 +17,10 @@ const typeDefs = gql`
         reviews: String
     }
 
+    type Query {
+        User: [User]
+    }
+
 `
 
 

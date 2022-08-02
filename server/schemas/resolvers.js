@@ -6,7 +6,7 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
 
     Query: {
-        Users: async () => {
+        User: async () => {
             return await User.find({}).populate('Drinks').populate({
                 path: 'classes',
                 populate: ''
@@ -18,12 +18,12 @@ const resolvers = {
     },
 
 
-    Mutation: {
+    // Mutation: {
 
 
 
 
-    }, 
+    // }, 
 
 
 
