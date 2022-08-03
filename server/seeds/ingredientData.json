@@ -128,5 +128,65 @@
       "ingredientName": "Cointreau",
       "ingredientType": "Secondary Spirit",
       "alcoholProof": "80"
+    },
+    {
+      "ingredientName": "Sugar Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Apple Juice",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Pomegranate Grenadine",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Honey",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Almond Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Maple Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Raspberry Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Strawberry Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Vanilla Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Coconut Syrup",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Grenadine",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Coke",
+      "ingredientType": "Sweet",
+      "alcoholProof": 0
     }
 ]
