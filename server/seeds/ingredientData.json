@@ -383,5 +383,10 @@
       "ingredientName": "Passionfruit",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Celery Stalk",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
