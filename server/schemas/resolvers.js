@@ -7,10 +7,7 @@ const resolvers = {
 
     Query: {
         User: async () => {
-            return await User.find({}).populate('Drink').populate({
-                path: 'Drink',
-                populate: 'Ingredient'
-            });
+            return await User.find({});
         },
         Ingredient: async () => {
             return Ingredient.find({});
