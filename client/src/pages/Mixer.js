@@ -9,6 +9,9 @@ import useQueryMultiple from '../components/queryMultiple';
 
 const Mixer = () => {
     
+    const [spirits, setSpirits] = useState([])
+    const [secondarySpirits, setSecondarySpirits] = useState([])
+
     const [sweets, setSweets] = useState([])
     const [sours, setSours] = useState([])
     const [bothSweetSour, setBothSweetSour] = useState([])
@@ -25,6 +28,14 @@ const Mixer = () => {
     ] = useQueryMultiple()
     
     useEffect (() => {
+        if (data1) {
+            setSpirits(data1.Spirit.filter((spirit) => (
+                spirit.spiritType === "Sweet"
+            )))
+            setSecondarySpirits(data1.Spirit.filter((spirit) => (
+                spirit.spiritType === "Sweet"
+            )))
+        }
         if (data2) { 
         setSweets(data2.Ingredient.filter((ingredient) => (
             ingredient.ingredientType === "Sweet"
@@ -46,17 +57,14 @@ const Mixer = () => {
         )))
         setAccoutrements(data2.Ingredient.filter((ingredient) => (
             ingredient.ingredientType === "Accoutrements"
-        )))}
+        )))
+    }
         console.log(data2);
     },[data2])
 
-    // const {loading, data} = useQuery(QUERY_SPIRIT)
-    // const {loading2, data2} = useQuery(QUERY_INGREDIENT)
 
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
-
-
 
 
     return(

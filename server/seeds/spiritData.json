@@ -1,152 +1,152 @@
 [
   {
-    "ingredientName": "London Dry Gin",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "London Dry Gin",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Vodka",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Vodka",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "White Rum",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "White Rum",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Golden Rum",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Golden Rum",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Cognac V.S.O.P.",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Cognac V.S.O.P.",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Bourbon Whiskey",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Bourbon Whiskey",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Scotch Whiskey",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Scotch Whiskey",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Straight Rye Whiskey",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Straight Rye Whiskey",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Tequila Reposado",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Tequila Reposado",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Tequila Blanco",
-    "ingredientType": "Spirit",
-    "ingredientPortion": "2 Fl. Oz.",
+    "spiritName": "Tequila Blanco",
+    "spiritType": "Spirit",
+    "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Triple Sec",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Triple Sec",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 60
   },
   {
-    "ingredientName": "Dry Vermouth",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Dry Vermouth",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 35
   },
   {
-    "ingredientName": "Grand Marnier Liqueur",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Grand Marnier Liqueur",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Brut Champagne",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Brut Champagne",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Coffee Liqueur",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Coffee Liqueur",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Calvados Apple Brandy",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Calvados Apple Brandy",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 140
   },
   {
-    "ingredientName": "Chartreuse Vert",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Chartreuse Vert",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 110
   },
   {
-    "ingredientName": "Irish Cream Liqueur",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Irish Cream Liqueur",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Fino Sherry",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Fino Sherry",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 30
   },
   {
-    "ingredientName": "Port Wine",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Port Wine",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Sauvignon Blanc",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Sauvignon Blanc",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Pisco",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Pisco",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 90
   },
   {
-    "ingredientName": "Sake",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Sake",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Prosecco Sparkline Wine",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Prosecco Sparkline Wine",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Cointreau",
-    "ingredientType": "Secondary Spirit",
-    "ingredientPortion": "1 Fl. Oz.",
+    "spiritName": "Cointreau",
+    "spiritType": "Secondary Spirit",
+    "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 80
   }
 ]
