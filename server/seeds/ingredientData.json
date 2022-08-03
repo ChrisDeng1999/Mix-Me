@@ -428,5 +428,15 @@
       "ingredientName": "Cloves",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Cinnamon",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
