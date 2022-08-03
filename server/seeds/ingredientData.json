@@ -363,5 +363,10 @@
       "ingredientName": "Fresh Raspberries",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Fresh Basil Leaves",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
