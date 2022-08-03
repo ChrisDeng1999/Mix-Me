@@ -328,5 +328,10 @@
       "ingredientName": "Half & Half",
       "ingredientType": "Mixers",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Tonic Water",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
     }
 ]
