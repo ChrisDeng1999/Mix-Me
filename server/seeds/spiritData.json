@@ -1,132 +1,132 @@
 [
   {
-    "ingredientName": "London Dry Gin",
-    "ingredientType": "Spirit",
+    "spiritName": "London Dry Gin",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Vodka",
-    "ingredientType": "Spirit",
+    "spiritName": "Vodka",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "White Rum",
-    "ingredientType": "Spirit",
+    "spiritName": "White Rum",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Golden Rum",
-    "ingredientType": "Spirit",
+    "spiritName": "Golden Rum",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Cognac V.S.O.P.",
-    "ingredientType": "Spirit",
+    "spiritName": "Cognac V.S.O.P.",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Bourbon Whiskey",
-    "ingredientType": "Spirit",
+    "spiritName": "Bourbon Whiskey",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Scotch Whiskey",
-    "ingredientType": "Spirit",
+    "spiritName": "Scotch Whiskey",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Straight Rye Whiskey",
-    "ingredientType": "Spirit",
+    "spiritName": "Straight Rye Whiskey",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Tequila Reposado",
-    "ingredientType": "Spirit",
+    "spiritName": "Tequila Reposado",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Tequila Blanco",
-    "ingredientType": "Spirit",
+    "spiritName": "Tequila Blanco",
+    "spiritType": "Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Triple Sec",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Triple Sec",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 60
   },
   {
-    "ingredientName": "Dry Vermouth",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Dry Vermouth",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 35
   },
   {
-    "ingredientName": "Grand Marnier Liqueur",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Grand Marnier Liqueur",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 80
   },
   {
-    "ingredientName": "Brut Champagne",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Brut Champagne",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Coffee Liqueur",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Coffee Liqueur",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Calvados Apple Brandy",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Calvados Apple Brandy",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 140
   },
   {
-    "ingredientName": "Chartreuse Vert",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Chartreuse Vert",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 110
   },
   {
-    "ingredientName": "Irish Cream Liqueur",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Irish Cream Liqueur",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Fino Sherry",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Fino Sherry",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 30
   },
   {
-    "ingredientName": "Port Wine",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Port Wine",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Sauvignon Blanc",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Sauvignon Blanc",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Brut Champagne",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Brut Champagne",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Pisco",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Pisco",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 90
   },
   {
-    "ingredientName": "Sake",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Sake",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 40
   },
   {
-    "ingredientName": "Prosecco Sparkline Wine",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Prosecco Sparkline Wine",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 24
   },
   {
-    "ingredientName": "Cointreau",
-    "ingredientType": "Secondary Spirit",
+    "spiritName": "Cointreau",
+    "spiritType": "Secondary Spirit",
     "alcoholProof": 80
   }
 ]
