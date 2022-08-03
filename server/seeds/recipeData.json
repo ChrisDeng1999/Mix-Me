@@ -23,5 +23,10 @@
         "recipeName": "Bloody Mary",
         "ingredientList": ["Lemon Juice", "Tomato Juice", "Worcestershire Sauce", "Tabasco", "Celery Stalk", "Stuffed Green Olive"],
         "spiritList": ["Vodka"]
+    },
+    {
+        "recipeName": "White Russian",
+        "ingredientList": ["Half & Half", "Coffee Beans"],
+        "spiritList": ["Vodka", "Coffee Liqueur"]
     }
 ]
