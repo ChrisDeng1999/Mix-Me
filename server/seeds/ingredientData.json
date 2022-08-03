@@ -403,5 +403,10 @@
       "ingredientName": "Orange Rind Twist",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lemon Rind Twist",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
