@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import { useQuery } from '@apollo/client';
 import {QUERY_INGREDIENT} from "../utils/queries"
+import {QUERY_SPIRIT} from "../utils/queries"
 
 // import DrinkIngredients from '../components/DrinkIngredients';
 
@@ -8,10 +9,12 @@ import {QUERY_INGREDIENT} from "../utils/queries"
 
 const Mixer = () => {
     
-    const {loading, data} = useQuery(QUERY_INGREDIENT)
+    const {loading, data} = useQuery(QUERY_INGREDIENT, QUERY_SPIRIT)
 
     const ingredient = data?.Ingredient || [];
-    
+    const spirit = data?.Spirit || [];
+
+
     useEffect(() => {
         console.log(ingredient)
     })

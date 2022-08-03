@@ -10,3 +10,13 @@ query Ingredient {
     }
   }
 `
+export const QUERY_SPIRIT = gql`
+query Spirit {
+    Spirit {
+      _id
+      spiritName
+      spiritType
+      alcoholProof
+    }
+  }
+  `
