@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { useQuery } from '@apollo/client';
 
 import useQueryMultiple from '../components/queryMultiple';
-
+import IngredientPortion from '../components/IngredientPortion';
 
 
 
@@ -20,7 +20,9 @@ const Mixer = () => {
     const [mixer, setMixer] = useState([])
     const [accoutrements, setAccoutrements] = useState([])
 
-
+    const [newIngredients, setNewIngredients] = useState([])
+    const [ingredientPortion, setIngredientPortion] = useState(0)
+    const [showButtons, setShowButtons] = useState({display : "none", index : 0})
 
     const [
         { loading: loading1, data: data1 },
@@ -29,12 +31,12 @@ const Mixer = () => {
     
     useEffect (() => {
         if (data1) {
-            setSpirits(data1.Spirit.filter((spirit) => (
-                spirit.spiritType === "Sweet"
-            )))
-            setSecondarySpirits(data1.Spirit.filter((spirit) => (
-                spirit.spiritType === "Sweet"
-            )))
+        setSpirits(data1.Spirit.filter((spirit) => (
+            spirit.spiritType === "Spirit"
+        )))
+        setSecondarySpirits(data1.Spirit.filter((spirit) => (
+            spirit.spiritType === "Secondary Spirit"
+        )))
         }
         if (data2) { 
         setSweets(data2.Ingredient.filter((ingredient) => (
@@ -59,19 +61,40 @@ const Mixer = () => {
             ingredient.ingredientType === "Accoutrements"
         )))
     }
-        console.log(data2);
-    },[data2])
+    },[data1, data2])
+
+    useEffect(() => {
+        console.log(newIngredients)
+    }, [newIngredients])
 
 
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
 
+    function addIngredients (ingredientId) {
+        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion}])
+    }
 
     return(
     <div>
         <h1>List of Spirits</h1>
         <div> 
-        {spirit && spirit.map(spir => (
+        {spirit && spirits.map(spir => (
+            <div key = {spir._id}>
+                <button onClick = {()=> setShowButtons({display:"show", id: spir._id})}>{spir.spiritName} - {spir.spiritType}</button>
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {spir._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
+            </div>
+        ))}
+        </div> 
+        <h1>List of Seconday Spirits</h1>
+        <div> 
+        {spirit && secondarySpirits.map(spir => (
             <div key = {spir._id}>
                 <p>{spir.spiritName} - {spir.spiritType}</p>
             </div>
