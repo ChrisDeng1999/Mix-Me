@@ -1,7 +1,12 @@
 [
     {
         "recipeName": "Old Fashioned",
-        "ingredientList": ["Orange Rind Twist"],
-        "spiritList": []
+        "ingredientList": ["Sugar Cube", "Angostura Arromatic Bitters", "Orange Rind Twist"],
+        "spiritList": ["Bourbon Whiskey"]
+    },
+    {
+        "recipeName": "Martini",
+        "ingredientList": ["Stuffed Green Olive", "Lemon Rind Twist"],
+        "spiritList": ["London Dry Gin", "Dry Vermouth"]
     }
 ]
