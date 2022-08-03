@@ -6,8 +6,8 @@ import React from 'react';
 // import { ADD_USER } from '../utils/mutations';
 
 // import Auth from '../utils/auth';
-const signUpSubmit = () => {
-    console.log(document.getElementsByClassName("form-control").value);
+const postSignUp = () => {
+console.log("Submit signup clicked");
 }
 
 
@@ -26,7 +26,7 @@ const Signup = () => {
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd"></input>
             </div>
-            <button type='submit' onClick={signUpSubmit}>Sumbit</button>
+            <button type='submit' onClick={postSignUp}>Sumbit</button>
         </div>
     )
 }
