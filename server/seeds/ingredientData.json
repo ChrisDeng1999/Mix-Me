@@ -282,6 +282,12 @@
       "alcoholProof": 0
     },
     {
+      "ingredientName": "Sugar Cube",
+      "ingredientType": "Accoutrements",
+      "ingredientPortion": "2 Cubes",
+      "alcoholProof": 0
+    },
+    {
       "ingredientName": "Stuffed Green Olives",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Olives",
