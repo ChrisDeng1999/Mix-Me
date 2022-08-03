@@ -273,5 +273,10 @@
       "ingredientName": "Black Pepper",
       "ingredientType": "Savory",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Worcestershire Sauce",
+      "ingredientType": "Tabasco",
+      "alcoholProof": 0
     }
 ]
