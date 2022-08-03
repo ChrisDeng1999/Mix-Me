@@ -418,5 +418,10 @@
       "ingredientName": "Lime Wedge",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lemon Wedge",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
