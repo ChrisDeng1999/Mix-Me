@@ -1,20 +1,34 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { useQuery } from '@apollo/client';
 
-// import {QUERY_SPIRIT, QUERY_INGREDIENT} from "../utils/queries"
 import useQueryMultiple from '../components/queryMultiple';
 
-// import DrinkIngredients from '../components/DrinkIngredients/index';
+
 
 
 
 const Mixer = () => {
     
+    const [sweets, setSweets] = useState([])
+    const [sours, setSours] = useState([])
+
+
 
     const [
         { loading: loading1, data: data1 },
         { loading: loading2, data: data2 }
     ] = useQueryMultiple()
+    
+    useEffect (() => {
+        if (data2) { 
+        setSweets(data2.Ingredient.filter((ingredient) => (
+            ingredient.ingredientType === "Sweet"
+        )))
+        setSours(data2.Ingredient.filter((ingredient) => (
+            ingredient.ingredientType === "Sour"
+        )))}
+        console.log(data2);
+    },[data2])
 
     // const {loading, data} = useQuery(QUERY_SPIRIT)
     // const {loading2, data2} = useQuery(QUERY_INGREDIENT)
@@ -23,31 +37,34 @@ const Mixer = () => {
     const ingredient = data2?.Ingredient || [];
 
 
-    useEffect(() => {
-        console.log(spirit);
-    })
+
 
     return(
     <div>
-        <div>
-            {/* <DrinkIngredients /> */}
-        </div>
-        <div>
-            {ingredient && ingredient.map(ing => (
-                <div key = {ing._id}>
-                    <p>{ing.ingredientName}</p>
-                    <p>{ing.ingredientType}</p>
-                </div>
-            ))}
-        </div>
+        <h1>List of Spirits</h1>
         <div> 
         {spirit && spirit.map(spir => (
             <div key = {spir._id}>
-                <p>{spir.spiritName}</p>
-                <p>{spir.spiritType}</p>
+                <p>{spir.spiritName} - {spir.spiritType}</p>
             </div>
         ))}
         </div> 
+        <h1>List of Sweet Ingredients</h1>
+        <div>
+            {ingredient && sweets.map(ing => (
+                <div key = {ing._id}>
+                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                </div>
+            ))}
+        </div>
+        <h1>List of Sour Ingredients</h1>
+        <div>
+            {ingredient && sours.map(ing => (
+                <div key = {ing._id}>
+                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                </div>
+            ))}
+        </div>
     </div>)
 }
 
