@@ -67,6 +67,9 @@ function App() {
               <Route path="/mixer" 
                 element={<Mixer />}
               />
+              <Route path ="*"
+              element = {<h1>This Page Doesn't Exist!</h1>}
+              />
             </Routes>
           </div>
           <Footer />
