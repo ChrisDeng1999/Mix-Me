@@ -22,3 +22,13 @@ header li {
     padding: 10px;
     color: white;
   }
+  
+
+
+.none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
