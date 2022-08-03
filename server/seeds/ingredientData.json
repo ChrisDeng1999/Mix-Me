@@ -276,7 +276,13 @@
     },
     {
       "ingredientName": "Worcestershire Sauce",
-      "ingredientType": "Tabasco",
+      "ingredientType": "Savory",
       "alcoholProof": 0
-    }
+    },
+    {
+      "ingredientName": "Tabasco",
+      "ingredientType": "Savory",
+      "alcoholProof": 0
+    },
+    
 ]
