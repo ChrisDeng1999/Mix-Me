@@ -423,5 +423,10 @@
       "ingredientName": "Lemon Wedge",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Cloves",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
