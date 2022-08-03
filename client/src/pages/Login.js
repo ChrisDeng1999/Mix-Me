@@ -16,13 +16,13 @@ const postLogin = () => {
 const Login = () => {
     return (
         <div>
-            <div class="form-group">
-                <label for="usr">Username:</label>
-                <input type="text" class="form-control" id="usr"></input>
+            <div className="form-group">
+                <label htmlFor="usr">Username:</label>
+                <input type="text" className="form-control" id="usr"></input>
             </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd"></input>
+            <div className="form-group">
+                <label htmlFor="pwd">Password:</label>
+                <input type="password" className="form-control" id="pwd"></input>
             </div>
             <button type='submit' onClick={postLogin}>Sumbit</button>
         </div>
