@@ -309,4 +309,14 @@
       "ingredientType": "Mixers",
       "alcoholProof": 0
     },
+    {
+      "ingredientName": "Ginger Ale",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "",
+      "ingredientType": "",
+      "alcoholProof": 0
+    }
 ]
