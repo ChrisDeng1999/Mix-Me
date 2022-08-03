@@ -368,5 +368,15 @@
       "ingredientName": "Fresh Basil Leaves",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Fresh Strawberries",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
