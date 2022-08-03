@@ -343,5 +343,10 @@
       "ingredientName": "Pink Lemonade",
       "ingredientType": "Mixers",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Coconut Water",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
     }
 ]
