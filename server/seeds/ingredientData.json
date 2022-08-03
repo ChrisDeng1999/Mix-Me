@@ -293,5 +293,15 @@
       "ingredientName": "Tomato Juice",
       "ingredientType": "Savory",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Club Soda",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Cream",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
     }
 ]
