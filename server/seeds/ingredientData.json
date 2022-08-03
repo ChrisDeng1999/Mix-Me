@@ -263,5 +263,10 @@
       "ingredientName": "Espresso",
       "ingredientType": "Bitters",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Egg White",
+      "ingredientType": "Savory",
+      "alcoholProof": 0
     }
 ]
