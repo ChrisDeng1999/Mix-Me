@@ -358,5 +358,10 @@
       "ingredientName": "Fresh Mint Leaves",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Fresh Raspberries",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
