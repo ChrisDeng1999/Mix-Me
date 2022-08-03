@@ -388,5 +388,15 @@
       "ingredientName": "Celery Stalk",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Stuffed Green Olives",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
