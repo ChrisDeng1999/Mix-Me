@@ -50,13 +50,9 @@ const Mixer = () => {
         console.log(data2);
     },[data2])
 
-    // const {loading, data} = useQuery(QUERY_SPIRIT)
-    // const {loading2, data2} = useQuery(QUERY_INGREDIENT)
 
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
-
-
 
 
     return(
