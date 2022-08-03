@@ -34,13 +34,20 @@ const typeDefs = gql`
         reviewAuthor: String
         createdAt: String
     }
+    type Auth {
+        token: ID!
+        user: User
+      }
 
     type Query {
         User: [User]
         Ingredient: [Ingredient]
         Spirit: [Spirit]
     }
-
+    type Mutation {
+        addUser(username: String!, email: String!, password: String!): Auth
+        login(email: String!, password: String!): Auth
+      }
 `
 
 
