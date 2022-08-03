@@ -1,0 +1,32 @@
+[
+    {
+        "recipeName": "Old Fashioned",
+        "ingredientList": ["Sugar Cube", "Angostura Arromatic Bitters", "Orange Rind Twist"],
+        "spiritList": ["Bourbon Whiskey"]
+    },
+    {
+        "recipeName": "Martini",
+        "ingredientList": ["Stuffed Green Olive", "Lemon Rind Twist"],
+        "spiritList": ["London Dry Gin", "Dry Vermouth"]
+    },
+    {
+        "recipeName": "Daiquiri",
+        "ingredientList": ["Simple Syrup", "Lime Juice", "Lime Wedge"],
+        "spiritList": ["White Rum"]
+    },
+    {
+        "recipeName": "Margarita",
+        "ingredientList": ["Lime Juice", "Lime Wedge", "Salt"],
+        "spiritList": ["Tequila Blanco"]
+    },
+    {
+        "recipeName": "Bloody Mary",
+        "ingredientList": ["Lemon Juice", "Tomato Juice", "Worcestershire Sauce", "Tabasco", "Celery Stalk", "Stuffed Green Olive"],
+        "spiritList": ["Vodka"]
+    },
+    {
+        "recipeName": "White Russian",
+        "ingredientList": ["Half & Half", "Coffee Beans"],
+        "spiritList": ["Vodka", "Coffee Liqueur"]
+    }
+]

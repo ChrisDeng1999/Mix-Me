@@ -1,6 +1,6 @@
 [
     {
-      "ingredientName": "Sugar Syrup",
+      "ingredientName": "Simple Syrup",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
@@ -282,7 +282,13 @@
       "alcoholProof": 0
     },
     {
-      "ingredientName": "Stuffed Green Olives",
+      "ingredientName": "Sugar Cube",
+      "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Cube",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Stuffed Green Olive",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Olives",
       "alcoholProof": 0
