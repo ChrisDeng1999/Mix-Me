@@ -333,5 +333,10 @@
       "ingredientName": "Tonic Water",
       "ingredientType": "Mixers",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Coke",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
     }
 ]
