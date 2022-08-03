@@ -378,5 +378,10 @@
       "ingredientName": "Fresh Ginger",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Passionfruit",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
