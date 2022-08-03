@@ -15,7 +15,7 @@ db.once('open', async () => {
 
   const ingredient = await Ingredient.insertMany(ingredientData);
   const spirit = await Spirit.insertMany(spiritData);
-  const user = await User.insertMany(userData);
+  const user = await User.create(userData);
 
   console.log('Ingredients seeded!');
   process.exit(0);
