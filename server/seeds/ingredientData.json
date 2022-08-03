@@ -290,6 +290,8 @@
       "alcoholProof": 0
     },
     {
-      "in"
+      "ingredientName": "Tomato Juice",
+      "ingredientType": "Savory",
+      "alcoholProof": 0
     }
 ]
