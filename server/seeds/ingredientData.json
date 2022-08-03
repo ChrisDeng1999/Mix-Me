@@ -413,5 +413,10 @@
       "ingredientName": "Orange Slice",
       "ingredientType": "Accoutrements",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lime Wedge",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
     }
 ]
