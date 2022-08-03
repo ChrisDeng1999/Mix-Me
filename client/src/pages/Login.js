@@ -8,6 +8,9 @@ import Button from 'react-bootstrap/Button';
 
 // import Auth from '../utils/auth';
 
+const postLogin = () => {
+    console.log("Submit Login clicked");
+}
 
 
 const Login = () => {
@@ -21,6 +24,7 @@ const Login = () => {
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd"></input>
             </div>
+            <button type='submit' onClick={postLogin}>Sumbit</button>
         </div>
     )
 }

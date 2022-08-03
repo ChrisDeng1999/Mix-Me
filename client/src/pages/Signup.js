@@ -6,7 +6,9 @@ import React from 'react';
 // import { ADD_USER } from '../utils/mutations';
 
 // import Auth from '../utils/auth';
-
+const postSignUp = () => {
+console.log("Submit signup clicked");
+}
 
 
 const Signup = () => {
@@ -24,6 +26,7 @@ const Signup = () => {
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd"></input>
             </div>
+            <button type='submit' onClick={postSignUp}>Sumbit</button>
         </div>
     )
 }
