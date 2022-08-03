@@ -354,4 +354,9 @@
       "ingredientType": "Mixers",
       "alcoholProof": 0
     },
+    {
+      "ingredientName": "Fresh Mint Leaves",
+      "ingredientType": "Accoutrements",
+      "alcoholProof": 0
+    }
 ]
