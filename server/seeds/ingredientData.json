@@ -338,5 +338,10 @@
       "ingredientName": "Coke",
       "ingredientType": "Mixers",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Pink Lemonade",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
     }
 ]
