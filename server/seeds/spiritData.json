@@ -3,5 +3,10 @@
       "spiritName": "Grey Goose",
       "spiritType": "Vodka",
       "alcoholProof": 80
+    },
+    {
+      "spiritName": "Jack Daniel",
+      "spiritType": "Whiskey",
+      "alcoholProof": 80
     }
 ]

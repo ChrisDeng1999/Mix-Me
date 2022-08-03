@@ -1,6 +1,11 @@
 [
     {
       "ingredientName": "Orange Juice",
+      "ingredientType": "Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Apple Juice",
       "ingredientType": "Sweet",
       "alcoholProof": 0
     }
