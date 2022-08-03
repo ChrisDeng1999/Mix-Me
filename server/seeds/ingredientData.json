@@ -348,5 +348,10 @@
       "ingredientName": "Coconut Water",
       "ingredientType": "Mixers",
       "alcoholProof": 0
-    }
+    },
+    {
+      "ingredientName": "Water",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
+    },
 ]
