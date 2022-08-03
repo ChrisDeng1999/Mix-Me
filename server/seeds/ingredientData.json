@@ -188,5 +188,80 @@
       "ingredientName": "Coke",
       "ingredientType": "Sweet",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lime Juice",
+      "ingredientType": "Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lemon Juice",
+      "ingredientType": "Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Cranberry Juice",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Pink Grapefruit Juice",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Pineapple Juice",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Orange Juice",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lime Cordial",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Ginger Ale",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Lemonade",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Pink Lemonade",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Sprite",
+      "ingredientType": "Sweet & Sour",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Angostura Aromatic Bitters",
+      "ingredientType": "Bitters",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Orange Bitters",
+      "ingredientType": "Bitters",
+      "alcoholProof": 18
+    },
+    {
+      "ingredientName": "Peyaud's Aromatic Bitters",
+      "ingredientType": "Bitters",
+      "alcoholProof": 70
+    },
+    {
+      "ingredientName": "Espresso",
+      "ingredientType": "Bitters",
+      "alcoholProof": 0
     }
 ]
