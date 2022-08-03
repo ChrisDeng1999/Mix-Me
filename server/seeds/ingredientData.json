@@ -268,5 +268,10 @@
       "ingredientName": "Egg White",
       "ingredientType": "Savory",
       "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Black Pepper",
+      "ingredientType": "Savory",
+      "alcoholProof": 0
     }
 ]
