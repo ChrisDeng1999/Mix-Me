@@ -1,312 +1,494 @@
 [
     {
+      "ingredientName": "London Dry Gin",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Vodka",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "White Rum",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Golden Rum",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Cognac V.S.O.P.",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Bourbon Whiskey",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Scotch Whiskey",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Straight Rye Whiskey",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Tequila Reposado",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Tequila Blanco",
+      "ingredientType": "Spirit",
+      "ingredientPortion": "2 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Triple Sec",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 60
+    },
+    {
+      "ingredientName": "Dry Vermouth",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 35
+    },
+    {
+      "ingredientName": "Grand Marnier Liqueur",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
+      "ingredientName": "Brut Champagne",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 24
+    },
+    {
+      "ingredientName": "Coffee Liqueur",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 40
+    },
+    {
+      "ingredientName": "Calvados Apple Brandy",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 140
+    },
+    {
+      "ingredientName": "Chartreuse Vert",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 110
+    },
+    {
+      "ingredientName": "Irish Cream Liqueur",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 40
+    },
+    {
+      "ingredientName": "Fino Sherry",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 30
+    },
+    {
+      "ingredientName": "Port Wine",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 40
+    },
+    {
+      "ingredientName": "Sauvignon Blanc",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 24
+    },
+    {
+      "ingredientName": "Pisco",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 90
+    },
+    {
+      "ingredientName": "Sake",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 40
+    },
+    {
+      "ingredientName": "Prosecco Sparkline Wine",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 24
+    },
+    {
+      "ingredientName": "Cointreau",
+      "ingredientType": "Secondary Spirit",
+      "ingredientPortion": "1 Fl. Oz.",
+      "alcoholProof": 80
+    },
+    {
       "ingredientName": "Sugar Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Apple Juice",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Pomegranate Grenadine",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Honey",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Almond Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Maple Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Raspberry Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Strawberry Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Vanilla Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Coconut Syrup",
       "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Grenadine",
       "ingredientType": "Sweet",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Coke",
-      "ingredientType": "Sweet",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lime Juice",
       "ingredientType": "Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lemon Juice",
       "ingredientType": "Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Cranberry Juice",
       "ingredientType": "Sweet & Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Pink Grapefruit Juice",
       "ingredientType": "Sweet & Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Pineapple Juice",
       "ingredientType": "Sweet & Sour",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Orange Juice",
-      "ingredientType": "Sweet & Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lime Cordial",
       "ingredientType": "Sweet & Sour",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Ginger Ale",
-      "ingredientType": "Sweet & Sour",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Lemonade",
-      "ingredientType": "Sweet & Sour",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Pink Lemonade",
-      "ingredientType": "Sweet & Sour",
-      "alcoholProof": 0
-    },
-    {
-      "ingredientName": "Sprite",
-      "ingredientType": "Sweet & Sour",
+      "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Angostura Aromatic Bitters",
       "ingredientType": "Bitters",
+      "ingredientPortion": "2 Dashes",
       "alcoholProof": 80
     },
     {
       "ingredientName": "Orange Bitters",
       "ingredientType": "Bitters",
+      "ingredientPortion": "2 Dashes",
       "alcoholProof": 18
     },
     {
       "ingredientName": "Peyaud's Aromatic Bitters",
       "ingredientType": "Bitters",
+      "ingredientPortion": "2 Dashes",
       "alcoholProof": 70
     },
     {
       "ingredientName": "Espresso",
       "ingredientType": "Bitters",
+      "ingredientPortion": "1 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Egg White",
       "ingredientType": "Savory",
+      "ingredientPortion": "1 Egg White",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Black Pepper",
       "ingredientType": "Savory",
+      "ingredientPortion": "1 TSP",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Worcestershire Sauce",
       "ingredientType": "Savory",
+      "ingredientPortion": "2 Dashes",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Tabasco",
       "ingredientType": "Savory",
+      "ingredientPortion": "2 Dashes",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Whole Egg",
       "ingredientType": "Savory",
+      "ingredientPortion": "1 Whole Egg",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Tomato Juice",
       "ingredientType": "Savory",
+      "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Club Soda",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
+      "alcoholProof": 0
+    },
+    {
+      "ingredientName": "Orange Juice",
+      "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Cream",
       "ingredientType": "Mixers",
+      "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Milk",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Ginger Ale",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lemonade",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Sprite",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Half & Half",
       "ingredientType": "Mixers",
+      "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Tonic Water",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Coke",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Pink Lemonade",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Coconut Water",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Water",
       "ingredientType": "Mixers",
+      "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Fresh Mint Leaves",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "2 Sprigs",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Fresh Raspberries",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "6 Berries",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Fresh Basil Leaves",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "2 Sprigs",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Fresh Strawberries",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "2 Berries",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Fresh Ginger",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 TSP Shaved",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Passionfruit",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1/4 Cup",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Celery Stalk",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Stalk",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Stuffed Green Olives",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "2 Olives",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Salt",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 TSP",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Orange Rind Twist",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Twist",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lemon Rind Twist",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Twist",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Orange Slice",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Slice",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lime Wedge",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Wedge",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Lemon Wedge",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 Wedge",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Cloves",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 TSP",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Cinnamon",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "1 TSP",
       "alcoholProof": 0
     },
     {
       "ingredientName": "Coffee Beans",
       "ingredientType": "Accoutrements",
+      "ingredientPortion": "6 Beans",
       "alcoholProof": 0
     }
 ]
