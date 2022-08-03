@@ -303,5 +303,10 @@
       "ingredientName": "Cream",
       "ingredientType": "Mixers",
       "alcoholProof": 0
-    }
+    },
+    {
+      "ingredientName": "Milk",
+      "ingredientType": "Mixers",
+      "alcoholProof": 0
+    },
 ]
