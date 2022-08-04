@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 
-
+import {Link} from "react-router-dom"
 
 
 const Mixer = () => {
@@ -29,6 +29,11 @@ const Mixer = () => {
         { loading: loading2, data: data2 }
     ] = useQueryMultiple()
     
+
+    function grabIngredients () {
+
+    }
+
     useEffect (() => {
         if (data1) {
         setSpirits(data1.Spirit.filter((spirit) => (
@@ -244,8 +249,9 @@ const Mixer = () => {
         </div>
         <div className='col'>
         <h1>Ingredient Added</h1>
-        {newIngredients.map(ing => <p>{ing.name} {ing.quantity}</p>)}
-        <button><a href = "/mixingIngredients" className="text-decoration-none text-dark">Mix Me</a></button>
+        {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity}  <button onClick = {grabIngredients} ><Link ingName = {ing.name} ingQuantity = {ing.quantity} to = "/mixingIngredients"> Mix Me</Link></button></div>)}
+       
+        {/* <button onClick = {grabIngredients} ><a href = "/mixingIngredients" className="text-decoration-none text-dark">Mix Me</a></button> */}
         </div>
        
 
