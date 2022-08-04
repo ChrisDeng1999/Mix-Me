@@ -8,14 +8,14 @@ const IngredientPortion = (props) => {
             <button onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
             {props.ingredientPortion}
             <button onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
-            <button onClick = {() => props.addIngredients(props.id)}>Add Ingredients</button>
+            <button onClick = {() => props.addIngredients(props.id, props.name)}>Add Ingredients</button>
             </div>
         ):(
             <div className = {"none"}> 
             <button className = "plus" onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
             {props.ingredientPortion}
             <button className = "minus" onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
-            <button onClick = {() => props.addIngredients(props.id)}>Add Ingredients</button>
+            <button onClick = {() => props.addIngredients(props.id, props.name)}>Add Ingredients</button>
             </div>
         )}
         </div>
