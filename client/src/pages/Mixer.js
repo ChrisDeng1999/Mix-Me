@@ -245,7 +245,7 @@ const Mixer = () => {
         <div className='col'>
         <h1>Ingredient Added</h1>
         {newIngredients.map(ing => <p>{ing.name} {ing.quantity}</p>)}
-        <button>Mix Me</button>
+        <button><a href = "/mixingIngredients" className="text-decoration-none text-dark">Mix Me</a></button>
         </div>
        
 
