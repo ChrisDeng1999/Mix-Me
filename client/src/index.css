@@ -32,3 +32,21 @@ header li {
 .show {
   display: block;
 }
+
+.circle {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(112, 112, 112);
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.5s ease;
+}
+
+.circle:focus {
+  background-color: #9e9d9d;
+}
+

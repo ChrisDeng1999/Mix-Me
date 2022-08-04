@@ -12,9 +12,9 @@ const IngredientPortion = (props) => {
             </div>
         ):(
             <div className = {"none"}> 
-            <button onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
+            <button className = "plus" onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
             {props.ingredientPortion}
-            <button onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
+            <button className = "minus" onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
             <button onClick = {() => props.addIngredients(props.id)}>Add Ingredients</button>
             </div>
         )}

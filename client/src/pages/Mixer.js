@@ -81,7 +81,8 @@ const Mixer = () => {
         <div> 
         {spirit && spirits.map(spir => (
             <div key = {spir._id}>
-                <button onClick = {()=> setShowButtons({display:"show", id: spir._id})}>{spir.spiritName} - {spir.spiritType}</button>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: spir._id}) : setShowButtons({display:"none", id: spir._id})}> </button>
+                {spir.spiritName} - {spir.spiritType}
                 <IngredientPortion 
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
@@ -92,70 +93,145 @@ const Mixer = () => {
             </div>
         ))}
         </div> 
+
         <h1>List of Seconday Spirits</h1>
         <div> 
         {spirit && secondarySpirits.map(spir => (
             <div key = {spir._id}>
-                <p>{spir.spiritName} - {spir.spiritType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: spir._id}) : setShowButtons({display:"none", id: spir._id})}> </button>
+                {spir.spiritName} - {spir.spiritType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {spir._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
             </div>
         ))}
         </div> 
+
         <h1>List of Sweet Ingredients</h1>
         <div>
             {ingredient && sweets.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+
         <h1>List of Sour Ingredients</h1>
         <div>
             {ingredient && sours.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
+                
+                
                 </div>
             ))}
         </div>
+
         <h1>List of Sweet & Sour Ingredients</h1>
         <div>
             {ingredient && bothSweetSour.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+
         <h1>List of Bitter Ingredients</h1>
         <div>
             {ingredient && bitter.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+
         <h1>List of Savory Ingredients</h1>
         <div>
             {ingredient && savory.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+        
         <h1>List of Mixers</h1>
         <div>
             {ingredient && mixer.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+
         <h1>List of Accoutrements</h1>
         <div>
             {ingredient && accoutrements.map(ing => (
                 <div key = {ing._id}>
-                    <p>{ing.ingredientName} - {ing.ingredientType}</p>
+                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: ing._id}) : setShowButtons({display:"none", id: ing._id})}></button>
+                {ing.ingredientName} - {ing.ingredientType}
+                <IngredientPortion 
+                showButtons = { showButtons }
+                setIngredientPortion = { setIngredientPortion }
+                id = {ing._id}
+                addIngredients = {addIngredients}
+                ingredientPortion = { ingredientPortion }
+                />
                 </div>
             ))}
         </div>
+
     </div>)
 }
 
