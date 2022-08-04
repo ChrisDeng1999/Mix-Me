@@ -29,32 +29,47 @@ const Login = () => {
             [name]: value,
         });
     };
-    
+
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         console.log(formState);
         try {
-          const { data } = await login({
-            variables: { ...formState },
-          });
-    
-          Auth.login(data.login.token);
+            const { data } = await login({
+                variables: { ...formState },
+            });
+
+            Auth.login(data.login.token);
         } catch (e) {
-          console.error(e);
+            console.error(e);
         }
-    };    
+    };
 
     return (
         <form onSubmit={handleFormSubmit}>
             <div className="form-group">
                 <label htmlFor="usr">email:</label>
-                <input type="text" className="form-control" id="usr" name='email' value={formState.email}  onChange={handleChange}></input>
+                <input
+                    type="text"
+                    className="form-control"
+                    id="usr"
+                    name='email'
+                    value={formState.email}
+                    onChange={handleChange}>
+                </input>
             </div>
             <div className="form-group">
                 <label htmlFor="pwd">Password:</label>
-                <input type="password" className="form-control" id="pwd" name='password' value={formState.password}  onChange={handleChange}></input>
+                <input
+                    type="password"
+                    className="form-control mb-3"
+                    id="pwd" name='password'
+                    value={formState.password}
+                    onChange={handleChange}></input>
             </div>
-            <button type='submit' onClick={postLogin} >Sumbit</button>
+            <Button
+                type='submit'
+                variant="primary"
+                onClick={postLogin} >Sumbit</Button>
         </form>
     )
 }

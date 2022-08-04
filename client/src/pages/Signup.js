@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
@@ -54,24 +55,41 @@ const Signup = () => {
         <form onSubmit={handleFormSubmit}>
             <div className="form-group">
                 <label htmlFor="usr">Email:</label>
-                <input type="text" className="form-control" name='email' id="email" onChange={handleChange} value={formState.email} ></input>
+                <input
+                    type="text"
+                    className="form-control"
+                    name='email'
+                    id="email"
+                    onChange={handleChange}
+                    value={formState.email}>
+                </input>
             </div>
             <div className="form-group">
                 <label htmlFor="usr">Username:</label>
-                <input type="text" className="form-control" name='username' id="usr" onChange={handleChange} value={formState.username}></input>
+                <input
+                    type="text"
+                    className="form-control"
+                    name='username'
+                    id="usr"
+                    onChange={handleChange}
+                    value={formState.username}>
+                </input>
             </div>
             <div className="form-group">
                 <label htmlFor="pwd">Password:</label>
                 <input
                     type="password"
-                    className="form-control"
+                    className="form-control mb-3"
                     name='password'
                     id="pwd"
                     onChange={handleChange}
                     value={formState.password}>
                 </input>
             </div>
-            <button type='submit' onClick={postSignUp}>Sumbit</button>
+            <Button
+                type='submit'
+                variant="primary"
+                onClick={postSignUp}>Sumbit</Button>
         </form>
     )
 }
