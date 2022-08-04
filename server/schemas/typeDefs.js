@@ -16,38 +16,43 @@ const typeDefs = gql`
         createdAt: String
         reviews: String
     }
+
     type Ingredient {
         _id: ID
         ingredientName: String
         ingredientType: String
         alcoholProof: Int
     }
+
     type Spirit {
         _id: ID
         spiritName: String
         spiritType: String
         alcoholProof: Int
     }
+
     type Review {
         _id: ID
         reviewText: String
         reviewAuthor: String
         createdAt: String
     }
+
     type Auth {
         token: ID!
         user: User
-      }
+    }
 
     type Query {
         User: [User]
         Ingredient: [Ingredient]
         Spirit: [Spirit]
     }
+
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-      }
+    }
 `
 
 
