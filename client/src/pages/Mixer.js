@@ -71,12 +71,13 @@ const Mixer = () => {
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
 
-    function addIngredients (ingredientId) {
-        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion}])
+    function addIngredients (ingredientId, name) {
+        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name}])
     }
 
     return(
-    <div>
+    <div className='row'>
+        <div className='col'> 
         <h1>List of Spirits</h1>
         <div> 
         {spirit && spirits.map(spir => (
@@ -87,6 +88,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {spir._id}
+                name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -104,6 +106,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {spir._id}
+                name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -121,6 +124,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -138,6 +142,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -157,6 +162,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -174,6 +180,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -191,6 +198,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -208,6 +216,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -225,12 +234,20 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
                 </div>
             ))}
         </div>
+        </div>
+        <div className='col'>
+        <h1>Ingredient Added</h1>
+        {newIngredients.map(ing => <p>{ing.name} {ing.quantity}</p>)}
+        <button>Mix Me</button>
+        </div>
+       
 
     </div>)
 }
