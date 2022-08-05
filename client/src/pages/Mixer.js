@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
+import MixerCup from '../components/MixerCup';
 
 
 
@@ -288,6 +289,7 @@ console.log(spirits);
     </div>
          <div> 
          <DrinkMixer newIngredients = {newIngredients}/>  
+         <MixerCup newIngredients = {newIngredients}/>
      </div>
     </div>
     

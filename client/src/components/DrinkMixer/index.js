@@ -1,24 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import {Container, Row, Col, Card} from "react-bootstrap"
-import Vodka from "../../images/Vodka.png"
+
 
 
 function createElement (num, name, url) {
     console.log(name);
     const jsxArray = [];
   
-
-
     if (num > 1) {
         for (let i = 0; i < num; i++) {
             jsxArray.push(           
             <Col className = "mt-3">
             <Card>   
-            <img style = {{height:300}} src = {url}/> 
+            <img className = "ingBox" src = {url}/> 
                 <p>{name}</p>      
             </Card> 
             </Col> 
-            
             );
         }
         return jsxArray;
@@ -26,7 +24,7 @@ function createElement (num, name, url) {
         return (            
         <Col className = "mt-3">
         <Card>   
-        <img style = {{height:300}} src = {url}/>  
+        <img className = "ingBox" src = {url}/>  
             <p >{name}</p>
         
         </Card> 
@@ -37,8 +35,20 @@ function createElement (num, name, url) {
 
 
 const DrinkMixer  = ({newIngredients}) => {
+    
+    const[mixing, setMixing] = useState()
+
     console.log(newIngredients)
-    return(
+
+    useEffect (() => {
+        setTimeout(()=>{
+            setMixing(
+                <div>Hello</div>
+            )
+        }, 8000)
+    }, ) 
+    return (
+        <div> 
         <div>
             <Container>  
             <Row>  
@@ -50,7 +60,8 @@ const DrinkMixer  = ({newIngredients}) => {
             </Row>
             </Container>
         </div>
-
+        
+    </div>
 
     )
 } 
