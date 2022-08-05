@@ -5,7 +5,7 @@ import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
 
-import {Link} from "react-router-dom"
+
 
 
 const Mixer = () => {
@@ -25,6 +25,10 @@ const Mixer = () => {
     const [ingredientPortion, setIngredientPortion] = useState(0)
     const [showButtons, setShowButtons] = useState({display : "none", index : 0})
 
+    const [showIngredients, setShowIngredients] = useState(true)
+
+    const [disableSpirit, setDisableSpirit] = useState(false)
+
 
     const [
         { loading: loading1, data: data1 },
@@ -33,7 +37,7 @@ const Mixer = () => {
     
 
     function grabIngredients () {
-
+        setShowIngredients(false)
     }
 
     useEffect (() => {
@@ -80,16 +84,19 @@ const Mixer = () => {
 
     function addIngredients (ingredientId, name) {
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name}])
+        setDisableSpirit(true)
     }
 
     return(
+    <div>
+    <div className = {showIngredients === true? "show":"none"}>  
     <div className='row'>
         <div className='col'> 
         <h1>List of Spirits</h1>
         <div> 
         {spirit && spirits.map(spir => (
             <div key = {spir._id}>
-                <button className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: spir._id}) : setShowButtons({display:"none", id: spir._id})}> </button>
+                <button  disabled = {disableSpirit}  className = "circle" onClick = {()=> showButtons.display === "none"? setShowButtons({display:"show", id: spir._id}) : setShowButtons({display:"none", id: spir._id})}> </button>
                 {spir.spiritName} - {spir.spiritType}
                 <IngredientPortion 
                 showButtons = { showButtons }
@@ -98,6 +105,8 @@ const Mixer = () => {
                 name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {spir.spiritType}
                 />
             </div>
         ))}
@@ -116,6 +125,8 @@ const Mixer = () => {
                 name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {spir.spiritType}
                 />
             </div>
         ))}
@@ -134,6 +145,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -152,6 +165,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 
                 
@@ -172,6 +187,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -190,6 +207,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -208,6 +227,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -226,6 +247,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -244,6 +267,8 @@ const Mixer = () => {
                 name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
+                disableSpirit = {disableSpirit}
+                spiritType = {ing.ingredientType}
                 />
                 </div>
             ))}
@@ -254,10 +279,18 @@ const Mixer = () => {
         {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity} </div>)}
        
         <button onClick = {grabIngredients} >Mix Me</button>
+        
         </div>
-       
+    </div>
+             
 
-    </div>)
+    </div>
+         <div> 
+         <DrinkMixer newIngredients = {newIngredients}/>  
+     </div>
+    </div>
+    
+    )
 }
 
 export default Mixer;
