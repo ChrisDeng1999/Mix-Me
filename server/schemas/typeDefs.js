@@ -22,6 +22,7 @@ const typeDefs = gql`
         ingredientName: String
         ingredientType: String
         alcoholProof: Int
+        ingredientUrl: String
     }
 
     type Spirit {
@@ -29,6 +30,7 @@ const typeDefs = gql`
         spiritName: String
         spiritType: String
         alcoholProof: Int
+        spiritUrl: String
     }
 
     type Review {
