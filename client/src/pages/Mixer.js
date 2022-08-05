@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client';
 
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
+import DrinkMixer from '../components/DrinkMixer';
 
 import {Link} from "react-router-dom"
 
@@ -23,6 +24,7 @@ const Mixer = () => {
     const [newIngredients, setNewIngredients] = useState([])
     const [ingredientPortion, setIngredientPortion] = useState(0)
     const [showButtons, setShowButtons] = useState({display : "none", index : 0})
+
 
     const [
         { loading: loading1, data: data1 },
@@ -249,9 +251,9 @@ const Mixer = () => {
         </div>
         <div className='col'>
         <h1>Ingredient Added</h1>
-        {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity}  <button onClick = {grabIngredients} ><Link ingName = {ing.name} ingQuantity = {ing.quantity} to = "/mixingIngredients"> Mix Me</Link></button></div>)}
+        {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity} </div>)}
        
-        {/* <button onClick = {grabIngredients} ><a href = "/mixingIngredients" className="text-decoration-none text-dark">Mix Me</a></button> */}
+        <button onClick = {grabIngredients} >Mix Me</button>
         </div>
        
 
