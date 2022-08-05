@@ -5,6 +5,7 @@ const spiritSchema = new Schema ({
     spiritName: String,
     spiritType: String,
     alcoholProof: Number,
+    spiritImage: String,
 })
 
 const Spirit = model('Spirit', spiritSchema);
