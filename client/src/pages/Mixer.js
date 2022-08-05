@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import { useQuery } from '@apollo/client';
-
+import Auth from '../utils/auth';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
 import MixerCup from '../components/MixerCup';
-
+import { Navigate, useParams } from 'react-router-dom';
 
 
 
@@ -87,7 +87,9 @@ console.log(spirits);
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
         setDisableSpirit(true)
     }
-
+    if (Auth.getToken() == null){
+        return <Navigate to="/" />;
+      }
     return(
     <div>
     <div className = {showIngredients === true? "show":"none"}>  
