@@ -9,7 +9,8 @@
     "spiritName": "Vodka",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
-    "alcoholProof": 80
+    "alcoholProof": 80,
+    "spiritImage": "Vodka.jpg"
   },
   {
     "spiritName": "White Rum",
