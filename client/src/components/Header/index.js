@@ -12,8 +12,8 @@ const Header = () => {
     
     return(
         <header>
-        <li><a href="/mixer">Mixer</a></li>
-        <li><a href="/">Home</a></li>
+        <li><a  className="btn btn-lg btn-secondary m-2"  href="/mixer">Mixer</a></li>
+        <li><a  className="btn btn-lg btn-dark m-2"  href="/">Home</a></li>
         {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-info m-2" to="/me">
