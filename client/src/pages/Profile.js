@@ -6,7 +6,7 @@ import React from "react";
 
 // import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
-// import Auth from '../utils/auth';
+import Auth from '../utils/auth';
 
 const Profile = () => {
   return (
@@ -17,7 +17,7 @@ const Profile = () => {
       <h3>Description</h3>
       <textarea></textarea>
       <h3>Username</h3>
-      <p>Lorem</p>
+      <p>{Auth.getProfile().data.username}</p>
       <h3>Drinks Created</h3>
       <ul>
         <li>Vodka Soda</li>
