@@ -39,7 +39,7 @@ const Mixer = () => {
     function grabIngredients () {
         setShowIngredients(false)
     }
-
+console.log(spirits);
     useEffect (() => {
         if (data1) {
         setSpirits(data1.Spirit.filter((spirit) => (
@@ -82,8 +82,8 @@ const Mixer = () => {
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
 
-    function addIngredients (ingredientId, name) {
-        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name}])
+    function addIngredients (ingredientId, name, url) {
+        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
         setDisableSpirit(true)
     }
 
@@ -107,6 +107,7 @@ const Mixer = () => {
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {spir.spiritType}
+                url = {spir.spiritUrl}
                 />
             </div>
         ))}
