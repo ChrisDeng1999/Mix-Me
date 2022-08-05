@@ -9,7 +9,6 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Mixer from './pages/Mixer';
 import Profile from './pages/Profile';
-import MixingIngredients from './pages/MixingIngredients';
 import Header from './components/Header';
 
 // Construct our main GraphQL API endpoint
@@ -67,9 +66,6 @@ function App() {
               />
               <Route path="/mixer" 
                 element={<Mixer />}
-              />
-              <Route path="/mixingIngredients" 
-              element={<MixingIngredients />}
               />
               <Route path ="*"
               element = {<h1>This Page Doesn't Exist!</h1>}
