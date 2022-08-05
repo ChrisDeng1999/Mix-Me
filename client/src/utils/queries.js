@@ -6,6 +6,7 @@ query Ingredient {
       ingredientName
       ingredientType
       alcoholProof
+      ingredientUrl
       _id
     }
   }
@@ -17,6 +18,7 @@ query Spirit {
       spiritName
       spiritType
       alcoholProof
+      spiritUrl
     }
   }
   `
