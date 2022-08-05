@@ -3,14 +3,14 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@ap
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Mixer from './pages/Mixer';
 import Profile from './pages/Profile';
+import MixingIngredients from './pages/MixingIngredients';
 import Header from './components/Header';
-import Footer from './components/Footer';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -68,12 +68,14 @@ function App() {
               <Route path="/mixer" 
                 element={<Mixer />}
               />
+              <Route path="/mixingIngredients" 
+              element={<MixingIngredients />}
+              />
               <Route path ="*"
               element = {<h1>This Page Doesn't Exist!</h1>}
               />
             </Routes>
           </div>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>

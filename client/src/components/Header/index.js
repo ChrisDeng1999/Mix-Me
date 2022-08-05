@@ -4,6 +4,7 @@ import Auth from '../../utils/auth';
 
 
 const Header = () => {
+
     const logout = (event) => {
         event.preventDefault();
         Auth.logout();
@@ -11,7 +12,6 @@ const Header = () => {
     
     return(
         <header>
-        
         <li><a href="/mixer">Mixer</a></li>
         <li><a href="/">Home</a></li>
         {Auth.loggedIn() ? (
@@ -33,7 +33,6 @@ const Header = () => {
               </Link>
             </>
           )}
-        
         </header>
         );
     };

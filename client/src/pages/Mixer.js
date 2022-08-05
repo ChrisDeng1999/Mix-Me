@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 
-
+import {Link} from "react-router-dom"
 
 
 const Mixer = () => {
@@ -29,6 +29,11 @@ const Mixer = () => {
         { loading: loading2, data: data2 }
     ] = useQueryMultiple()
     
+
+    function grabIngredients () {
+
+    }
+
     useEffect (() => {
         if (data1) {
         setSpirits(data1.Spirit.filter((spirit) => (
@@ -71,12 +76,13 @@ const Mixer = () => {
     const spirit = data1?.Spirit || [];
     const ingredient = data2?.Ingredient || [];
 
-    function addIngredients (ingredientId) {
-        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion}])
+    function addIngredients (ingredientId, name) {
+        setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name}])
     }
 
     return(
-    <div>
+    <div className='row'>
+        <div className='col'> 
         <h1>List of Spirits</h1>
         <div> 
         {spirit && spirits.map(spir => (
@@ -87,6 +93,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {spir._id}
+                name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -104,6 +111,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {spir._id}
+                name = {spir.spiritName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -121,6 +129,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -138,6 +147,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -157,6 +167,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -174,6 +185,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -191,6 +203,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -208,6 +221,7 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
@@ -225,12 +239,21 @@ const Mixer = () => {
                 showButtons = { showButtons }
                 setIngredientPortion = { setIngredientPortion }
                 id = {ing._id}
+                name = {ing.ingredientName}
                 addIngredients = {addIngredients}
                 ingredientPortion = { ingredientPortion }
                 />
                 </div>
             ))}
         </div>
+        </div>
+        <div className='col'>
+        <h1>Ingredient Added</h1>
+        {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity}  <button onClick = {grabIngredients} ><Link ingName = {ing.name} ingQuantity = {ing.quantity} to = "/mixingIngredients"> Mix Me</Link></button></div>)}
+       
+        {/* <button onClick = {grabIngredients} ><a href = "/mixingIngredients" className="text-decoration-none text-dark">Mix Me</a></button> */}
+        </div>
+       
 
     </div>)
 }
