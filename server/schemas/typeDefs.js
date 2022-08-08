@@ -13,7 +13,7 @@ const typeDefs = gql`
         _id: ID
         drinkName: String
         drinkAuthor: String
-        drinkIngredients: [Ingredient]
+        drinkIngredients: [ID]
         createdAt: String
         reviews: [Review]!
     }
@@ -67,9 +67,8 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
         addRecipes(recipeName: String, ingredientList: String, spiritList: String): Recipes
-        addDrink(drinkName: String, drinkIngredients: [ID]): Drink
+        addDrink(drinkName: String, drinkIngredients:[ID], drinkAuthor: String): Drink
         
-
     }
 `
 

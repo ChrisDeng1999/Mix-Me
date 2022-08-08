@@ -31,10 +31,16 @@ const resolvers = {
   },
 
   Mutation: {
-    addUser: async (parent, { username, email, password }) => {
+    addUser: async (parent, { username, email, password }, context) => {
       const user = await User.create({ username, email, password });
       const token = signToken(user);
-
+      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
+      console.log(context)
+      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
+      console.log(context.user)
+      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
+      console.log(context.user.username)
+      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
       return { token, user };
     },
     login: async (parent, { email, password }) => {
@@ -61,22 +67,23 @@ const resolvers = {
         spiritList
       })
     },
-    addDrink: async (parent, { drinkName, drinkIngredients }, context) => {
-      if (context.user) {
+    addDrink: async (parent, { drinkName, drinkIngredients, drinkAuthor }) => {
+      
+      
         const drinks = await Drink.create({
           drinkName,
           drinkIngredients,
-          thoughtAuthor: context.user.username,
+          drinkAuthor,
         });
 
         await User.findOneAndUpdate(
-          { _id: context.user._id },
+          { username: drinkAuthor },
           { $addToSet: { drinks: drinks._id } }
         );
 
         return drinks;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+      
+     
     },
   }
 };

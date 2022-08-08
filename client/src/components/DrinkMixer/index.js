@@ -6,7 +6,8 @@ import './DrinkMaster.css'
 import image from './images/Mixercup.jpg'
 import { useMutation } from '@apollo/client'
 import { ADD_DRINK } from '../../utils/mutations';
-import { QUERY_ALLDRINKS, QUERY_USER } from '../../utils/queries';
+import Auth from '../../utils/auth';
+
 
 const test = document.getElementsByClassName("test");
 const cards = document.getElementsByClassName("card")
@@ -23,25 +24,13 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
 
     useEffect (() => {
         const tempArr = newIngredients.map(ing => ing.id)
+        console.log(tempArr)
         setIngredientId(tempArr);
-    }, [])
+    }, [drinkName])
 
 
     console.log(newIngredients)
-    async function addAnimation () {
-            
-        for (let i = 0; i < cards.length; i++) {
-                cards[i].classList.add('animate__animated');
-                cards[i].classList.add('animate__bounceOutDown');
-            }
-            
-        const { data } = await addDrink({
-            variables: {
-                drinkName: drinkName,
-                drinkIngredients: ingredientId
-            }
-        })
-    }
+
 
     function createElement (num, name, url, j) {
    
@@ -73,32 +62,45 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
         }}
 
     
-//   const handleFormSubmit = async (event) => {
-//     event.preventDefault();
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
 
-//     try {
-//       const { data } = await addThought({
-//         variables: {
-//           thoughtText,
-//           thoughtAuthor: Auth.getProfile().data.username,
-//         },
-//       });
+            
+        for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add('animate__animated');
+                cards[i].classList.add('animate__bounceOutDown');
+            }
 
-//       setThoughtText('');
-//     } catch (err) {
-//       console.error(err);
-//     }
-//   };
+    
+    try {
+    console.log(drinkName)
+    console.log(ingredientId)
+    console.log(Auth.getProfile().data.username);
+      const { data } = await addDrink({
+        
+        variables: {
+            drinkName: drinkName,
+            drinkIngredients: ingredientId,
+            drinkAuthor: Auth.getProfile().data.username,
+        },
+       
+    });
+    
+      setDrinkName('');
+    } catch (err) {
+      console.error(err);
+    }
 
-//   const handleChange = (event) => {
-//     const { name, value } = event.target;
+  };
 
-//     if (name === 'thoughtText' && value.length <= 280) {
-//       setThoughtText(value);
-//       setCharacterCount(value.length);
-//     }
-//   };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
 
+    if (name === 'drinkName' && value.length <= 20) {
+      setDrinkName(value);
+    }
+  };
+    
     return (
         <div> 
         <div>
@@ -114,39 +116,39 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
             
             </Row>
 
-        <div className="row"> 
-            <div className="col"> 
-                <div >  
-                <button className="center" onClick = {() => addAnimation()}><img src= { image } className = "mixerBtn" ></img></button>
-                </div>
-            </div>
-            
-            {/* <form
-            className="flex-row justify-center justify-space-between-md align-center"
-            onSubmit={handleFormSubmit}
-          >
-            <div className="col-12 col-lg-9">
+            <form>
+            <div>
               <textarea
-                name="thoughtText"
-                placeholder="Here's a new thought..."
-                value={thoughtText}
+                name="drinkName"
+                placeholder="Name your drink :D"
+                value={drinkName}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Thought
-              </button>
-            </div>
             {error && (
               <div className="col-12 my-3 bg-danger text-white p-3">
                 {error.message}
               </div>
             )}
-          </form> */}
+          </form>
+
+        <div className="row"> 
+            <div className="col"> 
+                <div >  
+                <button 
+                className="center" 
+                type="submit"
+                onClick = {handleFormSubmit}>
+                    <img src= { image } className = "mixerBtn" >
+                    </img>
+                    </button>
+                </div>
+            </div>
+            
+
         </div>
 
             
