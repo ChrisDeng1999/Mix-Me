@@ -6,13 +6,22 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
 
     Query: {
-        User: async () => {
-            return await User.find({});
-        },
+      users: async () => {
+        return User.find().populate('drinks');
+      },
+      user: async (parent, { username }) => {
+        return User.findOne({ username }).populate('drinks');
+      },
+      drinks: async (parent, { username }) => {
+        const params = username ? { username } : {};
+        return Drink.find(params).sort({ createdAt: -1 });
+      },
+      drink: async (parent, { thoughtId }) => {
+        return Drink.findOne({ _id: thoughtId });
+      },
         Ingredient: async () => {
             return Ingredient.find({});
         }, 
-
         Spirit: async () => {
             return Spirit.find({});
         }, 
@@ -42,13 +51,6 @@ const resolvers = {
             return { token, user };
           },
     }
-
-
-
-
-
-
-
 }
 
 
