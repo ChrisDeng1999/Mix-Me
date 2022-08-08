@@ -19,10 +19,6 @@ const drinkSchema = new Schema({
             ref: 'Ingredient',
         },
     ],
-    drinkAuthor: {
-        type: String,
-        required: true,
-    },
     createdAt: {
         type: Date,
         default: Date.now,
