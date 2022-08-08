@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import 'animate.css';
 
 
+
 const Mixer = () => {
     
     const [spirits, setSpirits] = useState([])
@@ -29,7 +30,8 @@ const Mixer = () => {
     const [showIngredients, setShowIngredients] = useState(true)
 
     const [disableSpirit, setDisableSpirit] = useState(false)
-
+    
+    const tester = document.getElementById("test")
 
     const [
         { loading: loading1, data: data1 },
@@ -39,6 +41,8 @@ const Mixer = () => {
 
     function grabIngredients () {
         setShowIngredients(false)
+        setDisableSpirit(true != true)
+        tester.classList.remove("none");
     }
 console.log(spirits);
     useEffect (() => {
@@ -85,7 +89,6 @@ console.log(spirits);
 
     function addIngredients (ingredientId, name, url) {
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
-        setDisableSpirit(true)
     }
 
     function filterIngredients (i) {
@@ -307,9 +310,12 @@ console.log(spirits);
              
 
     </div>
-         <div> 
-         <DrinkMixer newIngredients = {newIngredients} filterIngredients = {filterIngredients}/>  
-         <MixerCup newIngredients = {newIngredients}/>
+         <div className = "none" id = "test"> 
+         <DrinkMixer
+         newIngredients = {newIngredients} 
+         filterIngredients = {filterIngredients}/>  
+         <MixerCup
+          newIngredients = {newIngredients}/>
      </div>
     </div>
     

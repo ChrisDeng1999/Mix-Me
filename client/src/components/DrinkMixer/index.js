@@ -11,19 +11,18 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
     
 
     console.log(newIngredients)
-
+    function addAnimation () {
+            
+        for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add('animate__animated');
+                cards[i].classList.add('animate__bounceOutDown');
+            }
+    }
 
     function createElement (num, name, url, j) {
-        console.log(j);
+   
         const jsxArray = [];
-        
-        function addAnimation () {
-            
-            for (let i = 0; i < cards.length; i++) {
-                    cards[i].classList.add('animate__animated');
-                    cards[i].classList.add('animate__zoomOutDown');
-                }
-        }
+    
 
         if (num > 1) {
         
@@ -34,67 +33,72 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
                 <Card> 
                 {/* <Card onClick = {() => filterIngredients(j)}>    */}
                 <img className = "ingBox" src = {url}/> 
-                    <p>{name}</p>
-                <button onClick = {() => addAnimation()}>Add Me!</button>      
+                    <p>{name}</p>  
                 </Card> 
                 </Col>
-                  )} return jsxArray;
+                )} return jsxArray;
         } else {
             return (            
             <Col className = "mt-3">
             <Card>   
             <img className = "ingBox" src = {url}/>  
                 <p >{name}</p>
-                <button onClick = {() => addAnimation()}>Add Me!</button> 
             </Card> 
             </Col>  
             );
         }}
 
-    //     const [items, setItems] = useState();
+        // const [items, setItems] = useState();
 
 
-    //     console.log(newIngredients)
+        // console.log(newIngredients)
     
     
-    //     function createElement (num, name, url, j) {
+        // function createElement (num, name, url, j) {
             
-    //         console.log(j);
-    //         const jsxArray = [];
+        //     console.log(j);
+        //     const jsxArray = [];
             
-    //         function addAnimation () {
-                
-    //          const singleItem = items.filter((_, index)=> j !== index)
-    //             setItems(singleItem);
-    //             return jsxArray
-                
-    //         }
+    
 
-    //         if (num > 1) {
+        //     if (num > 1) {
             
-    //             for (let i = 0; i < num; i++) {
-    //                 console.log(jsxArray) 
-    //                 jsxArray.push(     
-    //                 <Col className = "mt-3">
-    //                 <Card> 
-    //                 {/* <Card onClick = {() => filterIngredients(j)}>    */}
-    //                 <img className = "ingBox" src = {url}/> 
-    //                     <p>{name}</p>
-    //                 <button onClick = {() => addAnimation()}>Add Me!</button>      
-    //                 </Card> 
-    //                 </Col>
-    //                   )} return jsxArray;
-    //         } else {
-    //             return (            
-    //             <Col className = "mt-3">
-    //             <Card>   
-    //             <img className = "ingBox" src = {url}/>  
-    //                 <p >{name}</p>
-    //                 <button onClick = {() => addAnimation()}>Add Me!</button> 
-    //             </Card> 
-    //             </Col> 
-    //             );
-    //         }
+        //         for (let i = 0; i < num; i++) {
+        //             console.log(jsxArray) 
+        //             jsxArray.push(     
+        //             <Col className = "mt-3">
+        //             <Card> 
+        //             {/* <Card onClick = {() => filterIngredients(j)}>    */}
+        //             <img className = "ingBox" src = {url}/> 
+        //                 <p>{name}</p>
+        //             <button onClick = {() => addAnimation()}>Add Me!</button>      
+        //             </Card> 
+        //             </Col>
+        //               )
+        //             function addAnimation () {
+                
+        //                 jsxArray.filter(( jsxArray[0] !== 0))
+                    
+        //                 return jsxArray     
+        //                }
+        //             } return jsxArray;
+        //     } else {
+        //         return (            
+        //         <Col className = "mt-3">
+        //         <Card>   
+        //         <img className = "ingBox" src = {url}/>  
+        //             <p >{name}</p>
+        //             <button onClick = {() => addAnimation()}>Add Me!</button> 
+        //         </Card> 
+        //         </Col> 
+        //         )
+        //         function addAnimation () {
+                
+        //             jsxArray.filter(( jsxArray[0] !== 0))
+                
+        //             return jsxArray     
+        //            };
+        //     }
 
 
     // }
@@ -110,7 +114,12 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
                 createElement(ing.quantity, ing.name, ing.url, i)
                 
             ))}
+            <div> 
 
+                <button onClick = {() => addAnimation()}>Add Me!</button>
+            
+            </div>
+            
             </Row>
             </Container>
         </div>
@@ -120,6 +129,5 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
     )
 } 
 
-// className = "animate__animated animate__zoomOutDown"
 
 export default DrinkMixer
