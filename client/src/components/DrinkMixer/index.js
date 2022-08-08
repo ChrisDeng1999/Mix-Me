@@ -1,55 +1,103 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import {Container, Row, Col, Card} from "react-bootstrap"
+import 'animate.css';
 
-
-
-
+const test = document.getElementsByClassName("test");
+const cards = document.getElementsByClassName("card")
 
 
 const DrinkMixer  = ({newIngredients, filterIngredients}) => {
     
-    
-    // const[mixing, setMixing] = useState()
 
     console.log(newIngredients)
 
-    // useEffect (() => {
-    //     setTimeout(()=>{
-    //         setMixing(
-    //             <div>Hello</div>
-    //         )
-    //     }, 8000)
-    // }, ) 
 
     function createElement (num, name, url, j) {
-        console.log(name);
+        console.log(j);
         const jsxArray = [];
-      
+        
+        function addAnimation () {
+            
+            for (let i = 0; i < cards.length; i++) {
+                    cards[i].classList.add('animate__animated');
+                    cards[i].classList.add('animate__zoomOutDown');
+                }
+        }
+
         if (num > 1) {
+        
             for (let i = 0; i < num; i++) {
-                jsxArray.push(           
+                console.log(jsxArray) 
+                jsxArray.push(     
                 <Col className = "mt-3">
-                <Card onClick = {() => filterIngredients(j)}>   
+                <Card> 
+                {/* <Card onClick = {() => filterIngredients(j)}>    */}
                 <img className = "ingBox" src = {url}/> 
-                    <p>{name}</p>      
+                    <p>{name}</p>
+                <button onClick = {() => addAnimation()}>Add Me!</button>      
                 </Card> 
-                </Col> 
-                );
-            }
-            return jsxArray;
+                </Col>
+                  )} return jsxArray;
         } else {
             return (            
             <Col className = "mt-3">
-            <Card onClick = {() => filterIngredients(j)}>   
+            <Card>   
             <img className = "ingBox" src = {url}/>  
                 <p >{name}</p>
-            
+                <button onClick = {() => addAnimation()}>Add Me!</button> 
             </Card> 
-            </Col> 
+            </Col>  
             );
-        }
-    }
+        }}
+
+    //     const [items, setItems] = useState();
+
+
+    //     console.log(newIngredients)
+    
+    
+    //     function createElement (num, name, url, j) {
+            
+    //         console.log(j);
+    //         const jsxArray = [];
+            
+    //         function addAnimation () {
+                
+    //          const singleItem = items.filter((_, index)=> j !== index)
+    //             setItems(singleItem);
+    //             return jsxArray
+                
+    //         }
+
+    //         if (num > 1) {
+            
+    //             for (let i = 0; i < num; i++) {
+    //                 console.log(jsxArray) 
+    //                 jsxArray.push(     
+    //                 <Col className = "mt-3">
+    //                 <Card> 
+    //                 {/* <Card onClick = {() => filterIngredients(j)}>    */}
+    //                 <img className = "ingBox" src = {url}/> 
+    //                     <p>{name}</p>
+    //                 <button onClick = {() => addAnimation()}>Add Me!</button>      
+    //                 </Card> 
+    //                 </Col>
+    //                   )} return jsxArray;
+    //         } else {
+    //             return (            
+    //             <Col className = "mt-3">
+    //             <Card>   
+    //             <img className = "ingBox" src = {url}/>  
+    //                 <p >{name}</p>
+    //                 <button onClick = {() => addAnimation()}>Add Me!</button> 
+    //             </Card> 
+    //             </Col> 
+    //             );
+    //         }
+
+
+    // }
 
     return (
         <div> 
@@ -60,6 +108,7 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
             {newIngredients && newIngredients.map((ing, i) => (
                 
                 createElement(ing.quantity, ing.name, ing.url, i)
+                
             ))}
 
             </Row>
@@ -70,5 +119,7 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
 
     )
 } 
+
+// className = "animate__animated animate__zoomOutDown"
 
 export default DrinkMixer

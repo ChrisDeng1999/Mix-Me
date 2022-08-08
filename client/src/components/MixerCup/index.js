@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import 'animate.css';
 
 const MixerCup = () => {
    const [mixCup, setMixCup] = useState()
     
    useEffect (() => {
-        setTimeout(()=>{
-            setMixCup(
-                <div>Hello</div>
-            )
-        }, 7000)
+       
+    setMixCup(<div className = "animate__animated animate__zoomOutDown">Hello</div>)
+    
     }, ) 
     return (<div>{mixCup}</div>)
 
