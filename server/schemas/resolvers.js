@@ -6,16 +6,22 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
 
     Query: {
-        User: async () => {
-            return await User.find({});
-        },
-        Users: async (parent, { userId }) => {
-          return User.findOne({ _id: userId}).populate("Recipes");
+      users: async () => {
+        return User.find().populate('drinks');
+      },
+      user: async (parent, { username }) => {
+        return User.findOne({ username }).populate('drinks');
+      },
+      drinks: async (parent, { username }) => {
+        const params = username ? { username } : {};
+        return Drink.find(params).sort({ createdAt: -1 });
+      },
+      drink: async (parent, { thoughtId }) => {
+        return Drink.findOne({ _id: thoughtId });
       },
         Ingredient: async () => {
             return Ingredient.find({});
         }, 
-
         Spirit: async () => {
             return Spirit.find({});
         }, 
@@ -47,6 +53,7 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           },
+
           addRecipes: async (parent, {recipeName, ingredientList, spiritList}) => {
         
             const recipe = await Recipes.create({
@@ -54,18 +61,11 @@ const resolvers = {
                 ingredientList, 
                 spiritList
             })
-          
-            await User.findOneAndUpdate(
-              { _id: userId },
-              { $addToSet: { recipe: recipe._id } }
-            );
-              return recipe;
-            }
-          },
 
   }
 
-
+    }
+}
 
 
 
