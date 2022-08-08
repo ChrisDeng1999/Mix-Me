@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import { useQuery } from '@apollo/client';
-
+import Auth from '../utils/auth';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
 import MixerCup from '../components/MixerCup';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -87,10 +87,27 @@ console.log(spirits);
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
         setDisableSpirit(true)
     }
+
     function filterIngredients (i) {
         const tempIngredients = newIngredients.filter((_, index)=> i !== index)
         setNewIngredients(tempIngredients) 
     }
+
+    // ------ Checks If user is logged in ------
+
+    if (Auth.getToken() == null){
+        return (
+            <div>
+            <h3>Sorry you are not logged in. Please Login to use this page</h3>
+            <Link className="btn btn-lg btn-dark m-2"  to="/">Home</Link>
+            <Link className="btn btn-lg btn-info m-2" to="/login">Login</Link>
+            <Link className="btn btn-lg btn-light m-2" to="/signup">Signup</Link>
+            </div>
+        );
+      }
+
+
+
     return(
     <div>
     <div className = {showIngredients === true? "show":"none"}>  

@@ -1,4 +1,6 @@
+import { rewriteURIForGET } from "@apollo/client";
 import React from "react";
+import { Navigate, useParams } from 'react-router-dom';
 // import { Navigate, useParams } from 'react-router-dom';
 // import { useQuery } from '@apollo/client';
 
@@ -7,8 +9,10 @@ import React from "react";
 // import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
-
 const Profile = () => {
+  if (Auth.getToken() == null){
+    return <Navigate to="/" />;
+  }
   return (
     <div>
       <h1>Profile Page</h1>
