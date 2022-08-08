@@ -32,7 +32,7 @@ const Drink = () => {
   return (
     <div>
       <h3 className="mb-2" align="center">{data.user.username}'s Mixer</h3>
-      <div>{AllUserDrinks()}</div>
+      <div className="mb-2" align="center">{AllUserDrinks()}</div>
     </div>
   );
 };
