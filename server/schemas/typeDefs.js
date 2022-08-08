@@ -6,15 +6,16 @@ const typeDefs = gql`
         username: String
         email: String
         password: String
-        drinks: [Drink]
+        drinks: [Drink]!
     }
 
     type Drink {
         _id: ID
         drinkName: String
-        drinkIngredients: String
+        drinkAuthor: String
+        drinkIngredients: [Ingredient]
         createdAt: String
-        reviews: String
+        reviews: [Review]!
     }
 
     type Ingredient {
@@ -46,7 +47,10 @@ const typeDefs = gql`
     }
 
     type Query {
-        User: [User]
+        users: [User]
+        user(username: String!): User
+        drinks(username: String): [Drink]
+        drink(drinkId: ID!): Drink
         Ingredient: [Ingredient]
         Spirit: [Spirit]
     }
