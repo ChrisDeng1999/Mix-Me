@@ -10,17 +10,16 @@ const drinkSchema = new Schema({
         maxlength: 280,
         trim: true,
     },
-    drinkAuthor: String,
+    drinkAuthor: {
+    type: String,
+    required: true,
+    },
     drinkIngredients: [
         {
             type: Schema.Types.ObjectId,
             ref: 'Ingredient',
         },
     ],
-    drinkAuthor: {
-        type: String,
-        required: true,
-    },
     createdAt: {
         type: Date,
         default: Date.now,

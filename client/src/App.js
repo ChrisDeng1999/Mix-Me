@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Mixer from './pages/Mixer';
 import Profile from './pages/Profile';
 import Header from './components/Header';
+import DrinkUser from './pages/DrinkUser';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -63,6 +64,10 @@ function App() {
               <Route 
                 path="/profiles/:username" 
                 element={<Profile />}
+              />
+              <Route 
+                path="/drinkuser/:username" 
+                element={<DrinkUser />}
               />
               <Route path="/mixer" 
                 element={<Mixer />}
