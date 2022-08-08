@@ -5,7 +5,8 @@ import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
 import MixerCup from '../components/MixerCup';
-import { Navigate, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import 'animate.css';
 
 
 
@@ -29,7 +30,8 @@ const Mixer = () => {
     const [showIngredients, setShowIngredients] = useState(true)
 
     const [disableSpirit, setDisableSpirit] = useState(false)
-
+    
+    const tester = document.getElementById("test")
 
     const [
         { loading: loading1, data: data1 },
@@ -39,6 +41,8 @@ const Mixer = () => {
 
     function grabIngredients () {
         setShowIngredients(false)
+        setDisableSpirit(true != true)
+        tester.classList.remove("none");
     }
 console.log(spirits);
     useEffect (() => {
@@ -85,11 +89,28 @@ console.log(spirits);
 
     function addIngredients (ingredientId, name, url) {
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
-        setDisableSpirit(true)
     }
+
+    function filterIngredients (i) {
+        const tempIngredients = newIngredients.filter((_, index)=> i !== index)
+        setNewIngredients(tempIngredients) 
+    }
+
+    // ------ Checks If user is logged in ------
+
     if (Auth.getToken() == null){
-        return <Navigate to="/" />;
+        return (
+            <div>
+            <h3>Sorry you are not logged in. Please Login to use this page</h3>
+            <Link className="btn btn-lg btn-dark m-2"  to="/">Home</Link>
+            <Link className="btn btn-lg btn-info m-2" to="/login">Login</Link>
+            <Link className="btn btn-lg btn-light m-2" to="/signup">Signup</Link>
+            </div>
+        );
       }
+
+
+
     return(
     <div>
     <div className = {showIngredients === true? "show":"none"}>  
@@ -289,9 +310,12 @@ console.log(spirits);
              
 
     </div>
-         <div> 
-         <DrinkMixer newIngredients = {newIngredients}/>  
-         <MixerCup newIngredients = {newIngredients}/>
+         <div className = "none" id = "test"> 
+         <DrinkMixer
+         newIngredients = {newIngredients} 
+         filterIngredients = {filterIngredients}/>  
+         {/* <MixerCup
+          newIngredients = {newIngredients}/> */}
      </div>
     </div>
     

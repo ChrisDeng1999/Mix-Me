@@ -3,6 +3,14 @@
         "username": "Nicklebeesucklebee",
         "email": "Nick@Nicksucks.com",
         "password": "Nicksucks69420",
-        "drinks" : []
+        "drinks" : ["Old Fashioned","Martini"]
+    },
+
+
+    {
+        "username": "GotThatDogInHim",
+        "email": "dog@gmail.com",
+        "password": "Sandlot",
+        "drinks" : ["Daiquiri","Margarita"]
     }
 ]
