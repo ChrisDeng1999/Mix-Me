@@ -87,7 +87,10 @@ console.log(spirits);
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
         setDisableSpirit(true)
     }
-
+    function filterIngredients (i) {
+        const tempIngredients = newIngredients.filter((_, index)=> i !== index)
+        setNewIngredients(tempIngredients) 
+    }
     return(
     <div>
     <div className = {showIngredients === true? "show":"none"}>  
@@ -288,7 +291,7 @@ console.log(spirits);
 
     </div>
          <div> 
-         <DrinkMixer newIngredients = {newIngredients}/>  
+         <DrinkMixer newIngredients = {newIngredients} filterIngredients = {filterIngredients}/>  
          <MixerCup newIngredients = {newIngredients}/>
      </div>
     </div>
