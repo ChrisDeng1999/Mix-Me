@@ -7,12 +7,14 @@ const typeDefs = gql`
         email: String
         password: String
         drinks: [Drink]
+        recipes: [Recipes]
     }
 
     type Drink {
         _id: ID
         drinkName: String
         drinkIngredients: String
+        drinkAuthor: String
         createdAt: String
         reviews: String
     }
@@ -45,15 +47,26 @@ const typeDefs = gql`
         user: User
     }
 
+    type Recipes {
+        _id: ID
+        recipeName: String
+        ingredientList: String
+        spiritList: String
+    }
+
     type Query {
+        Users(username: String!): [User]
         User: [User]
         Ingredient: [Ingredient]
         Spirit: [Spirit]
+        Recipes: [Recipes]
     }
 
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
+        addRecipes(userId: ID!, recipeName: String, ingredientList: String, spiritList: String): Recipes
+
     }
 `
 

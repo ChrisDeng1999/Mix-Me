@@ -10,6 +10,7 @@ const drinkSchema = new Schema ({
         maxlength: 280,
         trim: true,
     },
+    drinkAuthor: String,
     drinkIngredients: [
         { 
             type: Schema.Types.ObjectId,

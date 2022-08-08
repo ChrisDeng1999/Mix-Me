@@ -6,7 +6,7 @@ const MixerCup = () => {
     
    useEffect (() => {
        
-    setMixCup(<div className = "animate__animated animate__zoomOutDown">Hello</div>)
+    setMixCup(<div className = "animate__animated animate__zoomOutDown"></div>)
     
     }, ) 
     return (<div>{mixCup}</div>)

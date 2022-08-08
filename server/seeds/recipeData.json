@@ -1,52 +1,52 @@
 [
     {
         "recipeName": "Old Fashioned",
-        "ingredientList": ["Sugar Cube", "Angostura Arromatic Bitters", "Orange Rind Twist"],
-        "spiritList": ["Bourbon Whiskey"]
+        "ingredientList": "Sugar Cube, Angostura Arromatic Bitters, Orange Rind Twist",
+        "spiritList": "Bourbon Whiskey"
     },
     {
         "recipeName": "Martini",
-        "ingredientList": ["Stuffed Green Olive", "Lemon Rind Twist"],
-        "spiritList": ["London Dry Gin", "Dry Vermouth"]
+        "ingredientList": "Stuffed Green Olive, Lemon Rind Twist",
+        "spiritList": "London Dry Gin, Dry Vermouth"
     },
     {
         "recipeName": "Daiquiri",
-        "ingredientList": ["Simple Syrup", "Lime Juice", "Lime Wedge"],
-        "spiritList": ["White Rum"]
+        "ingredientList": "Simple Syrup, Lime Juice, Lime Wedge",
+        "spiritList": "White Rum"
     },
     {
         "recipeName": "Margarita",
-        "ingredientList": ["Lime Juice", "Lime Wedge", "Salt"],
-        "spiritList": ["Tequila Blanco"]
+        "ingredientList": "Lime Juice, Lime Wedge, Salt",
+        "spiritList": "Tequila Blanco"
     },
     {
         "recipeName": "Bloody Mary",
-        "ingredientList": ["Lemon Juice", "Tomato Juice", "Worcestershire Sauce", "Tabasco", "Celery Stalk", "Stuffed Green Olive"],
-        "spiritList": ["Vodka"]
+        "ingredientList": "Lemon Juice, Tomato Juice, Worcestershire Sauce, Tabasco, Celery Stalk, Stuffed Green Olive",
+        "spiritList": "Vodka"
     },
     {
         "recipeName": "Cosmopolitan",
-        "ingredientList": ["Simple Syrup", "Cranberry Juice", "Lime Juice", "Lime Wedge"],
-        "spiritList": ["Vodka", "Cointreau"]
+        "ingredientList": "Simple Syrup, Cranberry Juice, Lime Juice, Lime Wedge",
+        "spiritList": "Vodka, Cointreau"
     },
     {
         "recipeName": "Manhattan",
-        "ingredientList": ["Angostura Arromatic Bitters"],
-        "spiritList": ["Dry Vermouth", "Rye Whiskey"]
+        "ingredientList": "Angostura Arromatic Bitters",
+        "spiritList": "Dry Vermouth, Rye Whiskey"
     },
     {
         "recipeName": "Mint Julep",
-        "ingredientlist": ["Fresh Mint Leaves", "Simple Syrup"],
-        "spiritList": ["Bourbon Whiskey"]
+        "ingredientlist": "Fresh Mint Leaves, Simple Syrup",
+        "spiritList": "Bourbon Whiskey"
     },
     {
         "recipeName": "White Russian",
-        "ingredientList": ["Half & Half", "Coffee Beans"],
-        "spiritList": ["Vodka", "Coffee Liqueur"]
+        "ingredientList": "Half & Half, Coffee Beans",
+        "spiritList": "Vodka, Coffee Liqueur"
     },
     {
         "recipeName": "Gin & Tonic",
-        "ingredientList": ["Tonic Water", "Lime Wedge"],
-        "spiritList": ["London Dry Gin"]
+        "ingredientList": "Tonic Water, Lime Wedge",
+        "spiritList": "London Dry Gin"
     }
 ]

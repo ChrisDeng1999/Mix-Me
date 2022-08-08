@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import {Container, Row, Col, Card} from "react-bootstrap"
 import 'animate.css';
+import './DrinkMaster.css'
+import image from './images/Mixercup.jpg'
 
 const test = document.getElementsByClassName("test");
 const cards = document.getElementsByClassName("card")
@@ -114,13 +116,19 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
                 createElement(ing.quantity, ing.name, ing.url, i)
                 
             ))}
-            <div> 
 
-                <button onClick = {() => addAnimation()}>Add Me!</button>
-            
-            </div>
             
             </Row>
+
+        <div className="row"> 
+            <div className="col"> 
+                <div >  
+                <button className="center" onClick = {() => addAnimation()}><img src= { image } className = "mixerBtn" ></img></button>
+                </div>
+            </div>
+            </div>
+
+
             </Container>
         </div>
         

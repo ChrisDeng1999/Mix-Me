@@ -25,6 +25,13 @@ const userSchema = new Schema({
       ref: 'Drink',
     },
   ],
+  recipes: [
+    {
+      recipeName: String, 
+      ingredientList: String, 
+      spiritList: String
+    }
+  ]
 });
 
 userSchema.pre('save', async function (next) {

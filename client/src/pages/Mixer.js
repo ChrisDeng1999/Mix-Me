@@ -314,8 +314,8 @@ console.log(spirits);
          <DrinkMixer
          newIngredients = {newIngredients} 
          filterIngredients = {filterIngredients}/>  
-         <MixerCup
-          newIngredients = {newIngredients}/>
+         {/* <MixerCup
+          newIngredients = {newIngredients}/> */}
      </div>
     </div>
     

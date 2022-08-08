@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Drink, Ingredient, Review, Spirit, Profile } = require('../models');
+const { User, Drink, Ingredient, Review, Spirit, Profile, Recipes } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -9,6 +9,9 @@ const resolvers = {
         User: async () => {
             return await User.find({});
         },
+        Users: async (parent, { userId }) => {
+          return User.findOne({ _id: userId}).populate("Recipes");
+      },
         Ingredient: async () => {
             return Ingredient.find({});
         }, 
@@ -16,6 +19,9 @@ const resolvers = {
         Spirit: async () => {
             return Spirit.find({});
         }, 
+        Recipes: async () => {
+          return Recipes.find({});
+      }, 
     },
 
     Mutation: {
@@ -41,15 +47,26 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           },
-    }
+          addRecipes: async (parent, {recipeName, ingredientList, spiritList}) => {
+        
+            const recipe = await Recipes.create({
+                recipeName, 
+                ingredientList, 
+                spiritList
+            })
+          
+            await User.findOneAndUpdate(
+              { _id: userId },
+              { $addToSet: { recipe: recipe._id } }
+            );
+              return recipe;
+            }
+          },
+
+  }
 
 
 
-
-
-
-
-}
 
 
 
