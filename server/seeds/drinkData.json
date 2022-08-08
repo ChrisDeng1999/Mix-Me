@@ -4,5 +4,23 @@
         "drinkName": "Doggy Doo-Doo",
         "drinkIngredients": [],
         "reviews": []
+    },
+    {
+        "drinkAuthor": "NicksGotBics",
+        "drinkName": "Ganges River",
+        "drinkIngredients": [],
+        "reviews": []
+    },
+    {
+        "drinkAuthor": "NicksGotBics",
+        "drinkName": "Salt Lake Drinky",
+        "drinkIngredients": [],
+        "reviews": []
+    },
+    {
+        "drinkAuthor": "TrixieNixie",
+        "drinkName": "Go Go Juice",
+        "drinkIngredients": [],
+        "reviews": []
     }
 ]
