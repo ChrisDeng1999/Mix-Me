@@ -43,7 +43,7 @@ db.once('open', async () => {
     process.exit(1);
   }
   
-    console.log('Ingredients seeded!');
+  console.log('Ingredients seeded!');
     process.exit(0);
 
 });

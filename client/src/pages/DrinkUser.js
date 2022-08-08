@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_DRINK } from '../utils/queries';
 
-const Drink = () => {
+const DrinkUser = () => {
   const { username: userParam } = useParams();
 
   console.log({ username: userParam });
@@ -23,7 +23,7 @@ const Drink = () => {
       return (
         <div>
           <h4>{element.drinkName}</h4>
-          <p>{element.createdAt}</p>
+          <p>Posted on {element.createdAt}</p>
         </div>
       );
     }
@@ -37,4 +37,4 @@ const Drink = () => {
   );
 };
 
-export default Drink;
+export default DrinkUser;
