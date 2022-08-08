@@ -60,7 +60,24 @@ const resolvers = {
         ingredientList,
         spiritList
       })
-    }
+    },
+    addDrink: async (parent, { drinkName, drinkIngredients }, context) => {
+      if (context.user) {
+        const drinks = await Drink.create({
+          drinkName,
+          drinkIngredients,
+          thoughtAuthor: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { drinks: drinks._id } }
+        );
+
+        return drinks;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   }
 };
 

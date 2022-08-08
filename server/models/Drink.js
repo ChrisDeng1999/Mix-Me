@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
-
+const ingredientDrinkSchema = require('./IngredientDrinks.js');
 
 const drinkSchema = new Schema({
     drinkName: {
