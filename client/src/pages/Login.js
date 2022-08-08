@@ -47,7 +47,7 @@ const Login = () => {
     return (
         <form onSubmit={handleFormSubmit}>
             <div className="form-group">
-                <label htmlFor="usr">email:</label>
+                <label htmlFor="usr">Email:</label>
                 <input
                     type="text"
                     className="form-control"
@@ -69,7 +69,7 @@ const Login = () => {
             <Button
                 type='submit'
                 variant="primary"
-                onClick={postLogin} >Sumbit</Button>
+                onClick={postLogin} >Submit</Button>
         </form>
     )
 }

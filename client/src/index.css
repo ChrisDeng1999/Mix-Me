@@ -1,21 +1,93 @@
 * {
-    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+.homeImage {
+  height: 100vh;
+  width: 100vw;
+  min-height: 100%;
+  background: url(./logo.png) no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.headerSlogan {
+  color: #d59f59;
+  text-align: left !important;
+}
+
+.mixerButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
+}
+
+.homeButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
+}
+
+.specProfileButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
+}
+
+.logOutButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
+}
+
+.loginButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
+}
+
+.signUpButton {
+  background-color: #d59f59 !important;
+  border-color: #d59f59 !important;
 }
 
 header {
     top: 0;
     width: 100vw;
     height: 8vh;
-    background-color: rgb(43, 165, 43);
+    background-color: #3f7f77;
     display: flex;
     align-items: center;
     justify-content: end;
     float: right;
 }
 
+.mixEasy {
+  color: #d59f59;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flexbox;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0);
+}
+
+.createDrink {
+  background-color: #000000;
+  color: #d59f59;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.topThree {
+  background-color: #000000;
+  color: #d59f59;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 header li {
     display:block;
 }
+
 
   a {
     text-decoration: none;
@@ -23,7 +95,12 @@ header li {
     color: white;
   }
   
-
+button {
+  border-radius: 10px !important;
+  border: 3px solid #d59f59;
+  background: #d59f59;
+  color: white;
+}
 
 .none {
   display: none;
