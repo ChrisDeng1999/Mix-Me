@@ -6,6 +6,6 @@ const recipeSchema = new Schema({
   spiritList: String,
 })
 
-const Recipe = model("Recipe", recipeSchema);
+const Recipes = model("Recipes", recipeSchema);
 
-module.exports = Recipe;
+module.exports = Recipes;

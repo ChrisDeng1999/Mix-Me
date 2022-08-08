@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Drink, Ingredient, Review, Spirit, Profile } = require('../models');
+const { User, Drink, Ingredient, Review, Spirit, Profile, Recipes } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -25,6 +25,9 @@ const resolvers = {
         Spirit: async () => {
             return Spirit.find({});
         }, 
+        Recipes: async () => {
+          return Recipes.find({});
+      }, 
     },
 
     Mutation: {
@@ -50,8 +53,20 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
           },
+
+          addRecipes: async (parent, {recipeName, ingredientList, spiritList}) => {
+        
+            const recipe = await Recipes.create({
+                recipeName, 
+                ingredientList, 
+                spiritList
+            })
+
+  }
+
     }
 }
+
 
 
 
