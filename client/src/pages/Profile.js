@@ -60,13 +60,13 @@ const Profile = () => {
     return <Navigate to="/" />;
   }
   return (
-    <div className="homeImage">
-      <h1 className="profileTag">Profile Page</h1>
+    <div className="homeImage justify-content-center" align="center">
+      <h1>{Auth.getProfile().data.username} Profile</h1>
       <h2 className="profileTag"> Edit Profile</h2>
       <button
         onClick={uploadProfilePic}
         id="upload_widget"
-        class="cloudinary-button"
+        class="cloudinary-button mb-4"
       >
         Upload Avatar 
       </button>
