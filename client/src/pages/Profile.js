@@ -75,13 +75,11 @@ const Profile = () => {
       <h3 className="profileTag">Username</h3>
       <p className="profileTag">{Auth.getProfile().data.username}</p>
       <h3 className="profileTag">Drinks Created</h3>
-      <ul>
         {allDrinks && allDrinks.map(drink => (
-          <li className="profileTag" key = {drink.id}>
+          <div className="profileTag" key = {drink.id}>
             {drink}
-          </li>
+          </div>
         ))}
-      </ul>
     </div>
   );
 };
