@@ -45,9 +45,9 @@ mutation addDescription($description: String) {
 `
 
 export const ADD_IMG = gql ` 
-mutation addDescription($description: String) {
-  addDescription(description: $description) {
-    description
+mutation addImg($userImg: String) {
+  addImg(userImg: $userImg) {
+    userImg
   }
 }
 `
