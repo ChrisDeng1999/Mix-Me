@@ -9,31 +9,54 @@ import Auth from '../utils/auth';
 
 
 const Profile = () => {
- 
-
   const { loading, data } = useQuery(QUERY_DRINK, {
     variables: { username: Auth.getProfile().data.username },
   });
 
+  const user = data?.drinks.drinks || [];
 
-  const user = data?.drinks.drinks || []
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
+  function uploadProfilePic() {
+    var myWidget = window.cloudinary.createUploadWidget(
+      {
+        cloudName: "dniag1t6z",
+        uploadPreset: "gg1ohqd6",
+      },
+      (error, result) => {
+        if (!error && result && result.event === "success") {
+          console.log("Done! Here is the image info: ", result.info);
+          if (Auth.getToken() == null) {
+            return <Navigate to="/" />;
+          }
+        }
+      }
+    );
 
-  useEffect (() => {
-    console.log(user)
-  }, [user])
-
-
-
-
-  if (Auth.getToken() == null){
+    document.getElementById("upload_widget").addEventListener(
+      "click",
+      function () {
+        myWidget.open();
+      },
+      false
+    );
+  }
+  if (Auth.getToken() == null) {
     return <Navigate to="/" />;
   }
   return (
     <div className="homeImage">
       <h1 className="profileTag">Profile Page</h1>
       <h2 className="profileTag"> Edit Profile</h2>
-      <button className="loginButton">Upload Photo</button>
-      <h3 className="profileTag">Description</h3>
+      <button
+        onClick={uploadProfilePic}
+        id="upload_widget"
+        class="cloudinary-button"
+      >
+        Upload Avatar 
+      </button>
+      <h3 className="profileTag">Description</h3>      
       <textarea className="textArea"></textarea>
       <h3 className="profileTag">Username</h3>
       <p className="profileTag">{Auth.getProfile().data.username}</p>

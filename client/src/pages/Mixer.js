@@ -6,7 +6,7 @@ import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
 
 import { Link } from 'react-router-dom';
-import 'animate.css';
+// import 'animate.css';
 
 
 
