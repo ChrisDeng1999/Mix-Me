@@ -6,35 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return( 
-        
     <div className="homePage">
-
-
-    
-    
-    
-    
        <div className="homeImage">
-          
-
        </div>
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     </div>
-    
     );
 };
 

@@ -99,9 +99,9 @@ const Mixer = () => {
         return (
             <div className="homeImage">
             <h3 className="notLoggedIn">Sorry you are not logged in. Please Login to use this page</h3>
-            <Link className="btn btn-lg btn-dark m-2 homeButton"  to="/">Home</Link>
-            <Link className="btn btn-lg btn-info m-2 loginButton" to="/login">Login</Link>
-            <Link className="btn btn-lg btn-light m-2 signUpButton" to="/signup">Signup</Link>
+            <Link className="btn btn-lg btn-dark m-2 Button"  to="/">Home</Link>
+            <Link className="btn btn-lg btn-info m-2 Button" to="/login">Login</Link>
+            <Link className="btn btn-lg btn-light m-2 Button" to="/signup">Signup</Link>
             </div>
         );
       }
