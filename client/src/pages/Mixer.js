@@ -305,10 +305,11 @@ const Mixer = () => {
         </div>
         </div>
         <div className='col'>
-        <h1 className="mixerTitles">Ingredients Added</h1>
-        {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity} </div>)}
-       
-        <button onClick = {grabIngredients} >Mix Me</button>
+        <h1 className="ingredientTitles">Ingredients Added</h1>
+      
+        {newIngredients.map(ing => <div className="ingredientDivs" key = {ing.id}> {ing.name} {"* " + ing.quantity + " servings"} </div>)}
+      
+        <button className = "mixMeBtn" onClick = {grabIngredients} >Mix Me</button>
         
         </div>
     </div>

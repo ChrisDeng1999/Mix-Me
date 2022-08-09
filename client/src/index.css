@@ -159,3 +159,53 @@ header {
 .circle:focus {
   background-color: #9e9d9d;
 }
+
+.ingrPor {
+  height: 24px;
+  font-size: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.addPor {
+  height: 24px;
+  font-size: 12px;
+}
+
+.cardBox {
+  width: 150px;
+  height: 200px;
+}
+
+.mixerBox {
+  width: 400px;
+  height: 400px;
+}
+
+.centerMixer {
+  margin-left: 33%;
+}
+
+.red {
+  color: rgb(255, 67, 67);
+}
+
+.mixMeBtn {
+  margin-left: 390px;
+}
+
+.ingredientDivs {
+  color: aliceblue;
+  margin-left: 210px;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 430px;
+  text-align: center;
+}
+
+.ingredientTitles {
+  color:#d59f59;
+  margin-left: 250px;
+}

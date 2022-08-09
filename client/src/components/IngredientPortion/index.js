@@ -5,17 +5,17 @@ const IngredientPortion = (props) => {
         <div> 
         {props.showButtons.id === props.id?(
             <div className = {"show"}> 
-            <button onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
+            <button className = "ingrPor" onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
             {props.ingredientPortion}
-            <button onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
-            <button onClick = {() => props.addIngredients(props.id, props.name, props.url)}>Add Ingredients</button>
+            <button className = "ingrPor" onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
+            <button className = "addPor" onClick = {() => props.addIngredients(props.id, props.name, props.url)}>Add Ingredients</button>
             </div>
         ):(
             <div className = {"none"}> 
-            <button className = "plus" onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
+            <button className = "ingrPor" onClick={() => props.setIngredientPortion(props.ingredientPortion + 1)}>+</button>
             {props.ingredientPortion}
-            <button className = "minus" onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
-            <button onClick = {() => props.addIngredients(props.id, props.name, props.url)}>Add Ingredients</button>
+            <button className = "ingrPor" onClick={() => props.setIngredientPortion(props.ingredientPortion - 1)}>-</button>
+            <button className = "addPor" onClick = {() => props.addIngredients(props.id, props.name, props.url)}>Add Ingredients</button>
             </div>
         )}
         </div>
