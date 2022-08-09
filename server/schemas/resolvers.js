@@ -79,6 +79,10 @@ const resolvers = {
       
      
     },
+    addDescription: async (parent, { description }) => {
+      return User.findOneAndUpdate({description})
+
+    }
   }
 };
 

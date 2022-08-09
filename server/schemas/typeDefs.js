@@ -70,7 +70,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addRecipes(recipeName: String, ingredientList: String, spiritList: String): Recipes
         addDrink(drinkName: String, drinkIngredients:[ID], drinkAuthor: String): Drink
-        
+        addDescription(description: String): User
     }
 `
 

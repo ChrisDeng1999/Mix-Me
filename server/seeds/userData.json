@@ -3,6 +3,8 @@
         "username": "Nicklebeesucklebee",
         "email": "Nick@Nicksucks.com",
         "password": "Nicksucks69420",
+        "description" : "I am the greatest coder!",
+        "userImg" : "https://res.cloudinary.com/cdeng1999/image/upload/v1660020829/IMG_2810_udpxsf.jpg",
         "drinks" : []
     },
 
@@ -11,6 +13,8 @@
         "username": "GotThatDogInHim",
         "email": "dog@gmail.com",
         "password": "Sandlot",
+        "description" : "I am an amazing person!",
+        "userImg" : "https://res.cloudinary.com/cdeng1999/image/upload/v1660020835/bryanlonghair_fckveg.png",
         "drinks" : []
         
     },
@@ -18,12 +22,16 @@
         "username": "NicksGotBics",
         "email": "Nickie@Blickie.com",
         "password": "Nickiebickie123",
+        "description" : "I Hate CODING!",
+        "userImg" : "https://res.cloudinary.com/cdeng1999/image/upload/v1657820466/mmxp8ocyxceonx2yetju.jpg",
         "drinks" : []
     },
     {
         "username": "TrixieNixie",
         "email": "Myname@stillnick.com",
         "password": "TrixieGotBlickies556",
+        "description" : "I live nicklebeepicklebee!",
+        "userImg" : "https://res.cloudinary.com/cdeng1999/image/upload/v1660020841/sammiearphones_vcbrhs.png",
         "drinks" : []
     }
 ]
