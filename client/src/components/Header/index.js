@@ -13,14 +13,15 @@ const Header = () => {
     return(
         <header>
         <h1 className="headerSlogan">Make something amazing, easily.</h1>
+        <ul className="navBarButtons">
         <li><a  className="btn btn-lg btn-secondary m-2 mixerButton"  href="/mixer">Mixer</a></li>
         <li><a  className="btn btn-lg btn-dark m-2 homeButton"  href="/">Home</a></li>
         {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-info m-2 specProfileButton" to="/profile">
-                {Auth.getProfile().data.username}'s profile
+                My Profile
               </Link>
-              <button className="btn btn-lg btn-light m-2 logoutButton" onClick={logout}>
+              <button className="btn btn-lg btn-light m-2 logOutButton" onClick={logout}>
                 Logout
               </button>
             </>
@@ -34,6 +35,7 @@ const Header = () => {
               </Link>
             </>
           )}
+          </ul>
         </header>
         );
     };
