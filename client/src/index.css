@@ -67,6 +67,16 @@ header {
 
 .mixerTitles {
   color:#d59f59;
+  margin-left: 3rem;
+}
+
+.mixerDivs {
+  color: aliceblue;
+  margin-left: 3rem;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .navBarButtons li {
