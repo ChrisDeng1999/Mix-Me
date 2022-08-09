@@ -68,7 +68,7 @@ const DrinkMixer  = ({newIngredients}) => {
             
         for (let i = 0; i < cards.length; i++) {
                 cards[i].classList.add('animate__animated');
-                cards[i].classList.add('animate__bounceOutDown');
+                cards[i].classList.add('animate__rotateOut');
             }
 
     
@@ -96,7 +96,7 @@ const DrinkMixer  = ({newIngredients}) => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'drinkName' && value.length <= 20) {
+    if (name === 'drinkName' && value.length <= 30) {
       setDrinkName(value);
     }
   };
