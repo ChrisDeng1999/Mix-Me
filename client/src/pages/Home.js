@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-    return(
+    return( 
         
     <div className="homePage">
 
@@ -15,7 +15,8 @@ const Home = () => {
     
     
        <div className="homeImage">
-           
+          
+
        </div>
   
     

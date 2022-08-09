@@ -13,6 +13,7 @@ const Header = () => {
     return(
         <header>
         <h1 className="headerSlogan">Make something amazing, easily.</h1>
+        <ul className="navBarButtons">
         <li><a  className="btn btn-lg btn-secondary m-2 mixerButton"  href="/mixer">Mixer</a></li>
         <li><a  className="btn btn-lg btn-dark m-2 homeButton"  href="/">Home</a></li>
         {Auth.loggedIn() ? (
@@ -34,6 +35,7 @@ const Header = () => {
               </Link>
             </>
           )}
+          </ul>
         </header>
         );
     };

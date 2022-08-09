@@ -19,7 +19,7 @@ const Profile = () => {
       <h2 className="profileEditTag"> Edit Profile</h2>
       <button className="loginButton">Upload Photo</button>
       <h3 className="profileDescriptionTag">Description</h3>
-      <textarea></textarea>
+      <textarea className="textArea"></textarea>
       <h3 className="profileNameLabelTag">Username</h3>
       <p className="profileNameTag">{Auth.getProfile().data.username}</p>
       <h3 className="profileDrinksTag">Drinks Created</h3>
