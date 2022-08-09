@@ -71,6 +71,7 @@ const typeDefs = gql`
         addRecipes(recipeName: String, ingredientList: String, spiritList: String): Recipes
         addDrink(drinkName: String, drinkIngredients:[ID], drinkAuthor: String): Drink
         addDescription(description: String): User
+        addImg(userImg: String): User
     }
 `
 

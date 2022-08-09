@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_DRINK } from '../utils/queries';
-
+// import { useMutation } from '@apollo/client'
+// import { ADD_DESCRIPTION } from '../../utils/mutations';
 
 import Auth from '../utils/auth';
 
