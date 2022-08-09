@@ -1,9 +1,3 @@
-* {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    
-}
-
 .homePage {
   background-color:#3f7f77;
 }
@@ -32,22 +26,6 @@
   padding-left: 25px;
 }
 
-.profilePageTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 220px;
-}
-
-.profileEditTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 163px;
-}
-
 .navBarButtons {
   width: 30%;
   margin-right: 0px;
@@ -62,52 +40,12 @@
   text-align: right;
 }
 
-.profileDescriptionTag {
+.profileTag {
   color:#d59f59 !important;
   background-color:rgba(0, 0, 0, 0.5) !important;
   border-radius: 5px !important;
   padding: 5px;
   width: 154px;
-}
-
-.profileNameLabelTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 138px;
-}
-
-.profileNameTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 140px;
-}
-
-.profileDrinksTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 195px;
-}
-
-.profileFirstDrinkTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 98px;
-}
-
-.profileSecondDrinkTag {
-  color:#d59f59 !important;
-  background-color:rgba(0, 0, 0, 0.5) !important;
-  border-radius: 5px !important;
-  padding: 5px;
-  width: 116px;
 }
 
 .textArea {
@@ -116,52 +54,14 @@
   text-decoration: none;
 }
 
-.mixerButton {
+.Button {
   background-color: #d59f59 !important;
   border-color: #d59f59 !important;
   color: #3f7f77 !important;
 }
 
-.homeButton {
-  background-color: #d59f59 !important;
-  border-color: #d59f59 !important;
-  color: #3f7f77 !important;
-}
-
-.specProfileButton {
-  background-color: #d59f59 !important;
-  border-color: #d59f59 !important;
-  color: #3f7f77 !important;
-}
-
-.logOutButton {
-  background-color: #d59f59 !important;
-  border-color: #d59f59 !important;
-  color: #3f7f77 !important;
-}
-
-.loginButton {
-  background-color: #d59f59 !important;
-  border-color: #d59f59 !important;
-  color: #3f7f77 !important;
-}
-
-.signUpButton {
-  background-color: #d59f59 !important;
-  border-color: #d59f59 !important;
-  color: #3f7f77 !important;
-}
-
-.submitLoginButton {
-  background-color:#d59f59 !important;
-  border-color:#d59f59 !important;
-  color:#3f7f77 !important;
-}
-
-.submitSignUpButton {
-  background-color:#d59f59 !important;
-  border-color:#d59f59 !important;
-  color:#3f7f77 !important;
+.Button:hover{
+  box-shadow: #e28914;
 }
 
 .notLoggedIn {
@@ -170,12 +70,6 @@
   border-radius: 5px !important;
   padding: 5px;
 }
-
-/* .formDiv {
-  display: flex;
-  flex-direction: column;
-
-} */
 
 header {
     top: 0;
@@ -254,4 +148,3 @@ button {
 .circle:focus {
   background-color: #9e9d9d;
 }
-

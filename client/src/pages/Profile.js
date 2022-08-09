@@ -29,17 +29,17 @@ const Profile = () => {
   }
   return (
     <div className="homeImage">
-      <h1 className="profilePageTag">Profile Page</h1>
-      <h2 className="profileEditTag"> Edit Profile</h2>
+      <h1 className="profileTag">Profile Page</h1>
+      <h2 className="profileTag"> Edit Profile</h2>
       <button className="loginButton">Upload Photo</button>
-      <h3 className="profileDescriptionTag">Description</h3>
+      <h3 className="profileTag">Description</h3>
       <textarea className="textArea"></textarea>
-      <h3 className="profileNameLabelTag">Username</h3>
-      <p className="profileNameTag">{Auth.getProfile().data.username}</p>
-      <h3 className="profileDrinksTag">Drinks Created</h3>
+      <h3 className="profileTag">Username</h3>
+      <p className="profileTag">{Auth.getProfile().data.username}</p>
+      <h3 className="profileTag">Drinks Created</h3>
       <ul>
-        <li className="profileFirstDrinkTag">Vodka Soda</li>
-        <li className="profileSecondDrinkTag">Rum and Coke</li>
+        <li className="profileTag">Vodka Soda</li>
+        <li className="profileTag">Rum and Coke</li>
       </ul>
     </div>
   );
