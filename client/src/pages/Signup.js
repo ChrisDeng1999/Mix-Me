@@ -54,8 +54,8 @@ const Signup = () => {
     return (
         <div className="homeImage">
         <form className="formDiv" onSubmit={handleFormSubmit}>
-            <div className="form-group">
-                <label className="loginLabels" htmlFor="usr">Email:</label>
+            <div className="form-group w-25">
+                <label className="loginLabels" htmlFor="usr">EMAIL:</label>
                 <input
                     type="text"
                     className="form-control"
@@ -65,8 +65,8 @@ const Signup = () => {
                     value={formState.email}>
                 </input>
             </div>
-            <div className="form-group">
-                <label className="loginLabels" htmlFor="usr">Username:</label>
+            <div className="form-group w-25">
+                <label className="loginLabels" htmlFor="usr">USERNAME:</label>
                 <input
                     type="text"
                     className="form-control"
@@ -76,8 +76,8 @@ const Signup = () => {
                     value={formState.username}>
                 </input>
             </div>
-            <div className="form-group">
-                <label className="loginLabels" htmlFor="pwd">Password:</label>
+            <div className="form-group w-25">
+                <label className="loginLabels" htmlFor="pwd">PASSWORD:</label>
                 <input
                     type="password"
                     className="form-control mb-3"

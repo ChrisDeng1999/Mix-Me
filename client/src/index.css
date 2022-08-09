@@ -4,10 +4,14 @@
     
 }
 
+.homePage {
+  background-color:#3f7f77;
+}
+
 .homeImage {
   height: 100vh;
-  width: 100vw;
-  min-height: 100%;
+  width: 100%;
+  min-height: 100vh;
   background: url(./logo.png) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,11 +23,97 @@
   background-color:rgba(0, 0, 0, 0.5) !important;
   border-radius: 5px !important;
   padding: 5px;
+  margin-top: 6px;
 }
 
 .headerSlogan {
   color: #d59f59;
-  text-align: left !important;
+  width: 35%;
+  padding-left: 25px;
+}
+
+.profilePageTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 220px;
+}
+
+.profileEditTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 163px;
+}
+
+.navBarButtons {
+  width: 30%;
+  margin-right: 0px;
+}
+
+.mixerTitles {
+  color:#d59f59;
+}
+
+.navBarButtons li {
+  display: inline;
+  text-align: right;
+}
+
+.profileDescriptionTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 154px;
+}
+
+.profileNameLabelTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 138px;
+}
+
+.profileNameTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 140px;
+}
+
+.profileDrinksTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 195px;
+}
+
+.profileFirstDrinkTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 98px;
+}
+
+.profileSecondDrinkTag {
+  color:#d59f59 !important;
+  background-color:rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  padding: 5px;
+  width: 116px;
+}
+
+.textArea {
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
 }
 
 .mixerButton {
@@ -89,13 +179,13 @@
 
 header {
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     background-color: #3f7f77;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: end;
-    float: right;
+    /* justify-content: end; */
 }
 
 .mixEasy {
