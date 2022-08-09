@@ -116,7 +116,7 @@ console.log(spirits);
     <div className = {showIngredients === true? "show":"none"}>  
     <div className='row'>
         <div className='col'> 
-        <h1>List of Spirits</h1>
+        <h1 className="mixerTitles">List of Spirits</h1>
         <div> 
         {spirit && spirits.map(spir => (
             <div key = {spir._id}>
@@ -137,7 +137,7 @@ console.log(spirits);
         ))}
         </div> 
 
-        <h1>List of Seconday Spirits</h1>
+        <h1 className="mixerTitles">List of Seconday Spirits</h1>
         <div> 
         {spirit && secondarySpirits.map(spir => (
             <div key = {spir._id}>
@@ -157,7 +157,7 @@ console.log(spirits);
         ))}
         </div> 
 
-        <h1>List of Sweet Ingredients</h1>
+        <h1 className="mixerTitles">List of Sweet Ingredients</h1>
         <div>
             {ingredient && sweets.map(ing => (
                 <div key = {ing._id}>
@@ -177,7 +177,7 @@ console.log(spirits);
             ))}
         </div>
 
-        <h1>List of Sour Ingredients</h1>
+        <h1 className="mixerTitles">List of Sour Ingredients</h1>
         <div>
             {ingredient && sours.map(ing => (
                 <div key = {ing._id}>
@@ -199,7 +199,7 @@ console.log(spirits);
             ))}
         </div>
 
-        <h1>List of Sweet & Sour Ingredients</h1>
+        <h1 className="mixerTitles">List of Sweet & Sour Ingredients</h1>
         <div>
             {ingredient && bothSweetSour.map(ing => (
                 <div key = {ing._id}>
@@ -219,7 +219,7 @@ console.log(spirits);
             ))}
         </div>
 
-        <h1>List of Bitter Ingredients</h1>
+        <h1 className="mixerTitles">List of Bitter Ingredients</h1>
         <div>
             {ingredient && bitter.map(ing => (
                 <div key = {ing._id}>
@@ -239,7 +239,7 @@ console.log(spirits);
             ))}
         </div>
 
-        <h1>List of Savory Ingredients</h1>
+        <h1 className="mixerTitles">List of Savory Ingredients</h1>
         <div>
             {ingredient && savory.map(ing => (
                 <div key = {ing._id}>
@@ -259,7 +259,7 @@ console.log(spirits);
             ))}
         </div>
         
-        <h1>List of Mixers</h1>
+        <h1 className="mixerTitles">List of Mixers</h1>
         <div>
             {ingredient && mixer.map(ing => (
                 <div key = {ing._id}>
@@ -279,7 +279,7 @@ console.log(spirits);
             ))}
         </div>
 
-        <h1>List of Accoutrements</h1>
+        <h1 className="mixerTitles">List of Accoutrements</h1>
         <div>
             {ingredient && accoutrements.map(ing => (
                 <div key = {ing._id}>
@@ -300,7 +300,7 @@ console.log(spirits);
         </div>
         </div>
         <div className='col'>
-        <h1>Ingredient Added</h1>
+        <h1 className="mixerTitles">Ingredients Added</h1>
         {newIngredients.map(ing => <div key = {ing.id}> {ing.name} {ing.quantity} </div>)}
        
         <button onClick = {grabIngredients} >Mix Me</button>

@@ -28,7 +28,7 @@
 
 .headerSlogan {
   color: #d59f59;
-  width: 40%;
+  width: 35%;
   padding-left: 25px;
 }
 
@@ -51,6 +51,10 @@
 .navBarButtons {
   width: 30%;
   margin-right: 0px;
+}
+
+.mixerTitles {
+  color:#d59f59;
 }
 
 .navBarButtons li {
