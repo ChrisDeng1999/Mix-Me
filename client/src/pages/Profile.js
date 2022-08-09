@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_DRINK } from '../utils/queries';
-// import { useMutation } from '@apollo/client'
+import { ADD_IMG } from '../utils/mutations'
+import { useMutation } from '@apollo/client'
 // import { ADD_DESCRIPTION } from '../../utils/mutations';
 
 import Auth from '../utils/auth';
@@ -12,36 +13,19 @@ const Profile = () => {
   const { loading, data } = useQuery(QUERY_DRINK, {
     variables: { username: Auth.getProfile().data.username },
   });
-
-
+  
   const user = data?.drinks.drinks || [];
-
   const [allDrinks, setAllDrinks] = useState ([])
-
-  const [getImage, setGetImage] = useState ("")
-
-
+  const [getImage, myWidget] = useState ("")
+  
+  const [addImage, { error }] = useMutation(ADD_IMG) 
   useEffect(() => {
     const getDrinks = user.map(drink => drink.drinkName)
     console.log(getDrinks)
     setAllDrinks(getDrinks)
-    
   }, [user]);
 
-  
-
-  // function getDrinks () {
-  //   user.map(drink => drink.drinkName{
-
-  //   })
-  // }
-
-  function useUploadProfilePic(error, result) {
-  
-    // useEffect(()=>{
-      
-    // })
-   
+      function useUploadProfilePic(error, result) {
     const myWidget = window.cloudinary.createUploadWidget(
     
       {
@@ -50,9 +34,9 @@ const Profile = () => {
       },
       (error, result) => {
         if (!error && result && result.event === "success") {
-          const image = result.info.url 
-          console.log(image);
-          return image
+          const {result} = addImage({
+            variables: {userImg: result.info.url}
+          })
         } 
       }
     );
