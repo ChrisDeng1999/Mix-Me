@@ -56,7 +56,7 @@ const typeDefs = gql`
     type Query {
         users: [User]
         user(username: String!): User
-        drinks(username: String): [Drink]
+        drinks(username: String): User
         drink(drinkId: ID!): Drink
         Ingredient: [Ingredient]
         Spirit: [Spirit]
@@ -67,6 +67,8 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
         addRecipes(recipeName: String, ingredientList: String, spiritList: String): Recipes
+        addDrink(drinkName: String, drinkIngredients:[ID], drinkAuthor: String): Drink
+        
     }
 `
 
