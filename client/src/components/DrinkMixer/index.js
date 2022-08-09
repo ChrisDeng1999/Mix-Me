@@ -9,14 +9,14 @@ import { ADD_DRINK } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 
 
-const test = document.getElementsByClassName("test");
+
 const cards = document.getElementsByClassName("card")
 
 
-const DrinkMixer  = ({newIngredients, filterIngredients}) => {
+const DrinkMixer  = ({newIngredients}) => {
 
     const [drinkName, setDrinkName] = useState ("")
-    const [ingredientId, setIngredientId] = useState ([])
+    const [ingredientNumber, setIngredientNumber] = useState ([])
 
     
 
@@ -25,14 +25,14 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
     useEffect (() => {
         const tempArr = newIngredients.map(ing => ing.id)
         console.log(tempArr)
-        setIngredientId(tempArr);
+        setIngredientNumber(tempArr);
     }, [drinkName])
 
 
     console.log(newIngredients)
 
 
-    function createElement (num, name, url, j) {
+    function createElement (num, name, url) {
    
         const jsxArray = [];
     
@@ -74,18 +74,18 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
     
     try {
     console.log(drinkName)
-    console.log(ingredientId)
+    console.log(ingredientNumber)
     console.log(Auth.getProfile().data.username);
       const { data } = await addDrink({
         
         variables: {
             drinkName: drinkName,
-            drinkIngredients: ingredientId,
+            drinkIngredients: ingredientNumber,
             drinkAuthor: Auth.getProfile().data.username,
         },
        
     });
-    
+        console.log(data);
       setDrinkName('');
     } catch (err) {
       console.error(err);

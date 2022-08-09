@@ -4,7 +4,7 @@ import Auth from '../utils/auth';
 import useQueryMultiple from '../components/queryMultiple';
 import IngredientPortion from '../components/IngredientPortion';
 import DrinkMixer from '../components/DrinkMixer';
-import MixerCup from '../components/MixerCup';
+
 import { Link } from 'react-router-dom';
 import 'animate.css';
 
@@ -44,7 +44,7 @@ const Mixer = () => {
         setDisableSpirit(true != true)
         tester.classList.remove("none");
     }
-console.log(spirits);
+
     useEffect (() => {
         if (data1) {
         setSpirits(data1.Spirit.filter((spirit) => (
@@ -91,10 +91,7 @@ console.log(spirits);
         setNewIngredients([...newIngredients, {id : ingredientId, quantity: ingredientPortion, name: name, url: url}])
     }
 
-    function filterIngredients (i) {
-        const tempIngredients = newIngredients.filter((_, index)=> i !== index)
-        setNewIngredients(tempIngredients) 
-    }
+
 
     // ------ Checks If user is logged in ------
 
@@ -152,6 +149,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {spir.spiritType}
+                url = {spir.spiritUrl}
                 />
             </div>
         ))}
@@ -172,6 +170,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -192,6 +191,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 
                 
@@ -214,6 +214,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -234,6 +235,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -254,6 +256,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -274,6 +277,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -294,6 +298,7 @@ console.log(spirits);
                 ingredientPortion = { ingredientPortion }
                 disableSpirit = {disableSpirit}
                 spiritType = {ing.ingredientType}
+                url = {ing.ingredientUrl}
                 />
                 </div>
             ))}
@@ -312,10 +317,7 @@ console.log(spirits);
     </div>
          <div className = "none" id = "test"> 
          <DrinkMixer
-         newIngredients = {newIngredients} 
-         filterIngredients = {filterIngredients}/>  
-         {/* <MixerCup
-          newIngredients = {newIngredients}/> */}
+         newIngredients = {newIngredients}/>  
      </div>
     </div>
     

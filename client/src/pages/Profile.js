@@ -1,15 +1,29 @@
-import { rewriteURIForGET } from "@apollo/client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Navigate, useParams } from 'react-router-dom';
-// import { Navigate, useParams } from 'react-router-dom';
-// import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+import { QUERY_DRINK } from '../utils/queries';
 
-// import DrinkList from '../components/DrinkList';
-
-// import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
+
+
 const Profile = () => {
+ 
+
+  const { loading, data } = useQuery(QUERY_DRINK, {
+    variables: { username: Auth.getProfile().data.username },
+  });
+
+
+  const user = data?.drinks.drinks || []
+
+  useEffect (() => {
+    console.log(user)
+  }, [user])
+
+
+
+
   if (Auth.getToken() == null){
     return <Navigate to="/" />;
   }

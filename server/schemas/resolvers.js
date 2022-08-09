@@ -14,7 +14,7 @@ const resolvers = {
     },
     drinks: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Drink.find(params).sort({ createdAt: -1 });
+      return User.findOne(params).sort({ createdAt: -1 }).populate('drinks').populate({path: "drinks", populate: "drinkIngredients"});
     },
     drink: async (parent, { thoughtId }) => {
       return Drink.findOne({ _id: thoughtId });
@@ -31,16 +31,10 @@ const resolvers = {
   },
 
   Mutation: {
-    addUser: async (parent, { username, email, password }, context) => {
+    addUser: async (parent, { username, email, password }) => {
       const user = await User.create({ username, email, password });
       const token = signToken(user);
-      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
-      console.log(context)
-      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
-      console.log(context.user)
-      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
-      console.log(context.user.username)
-      console.log("JAHFDKJUHBFIEANFUJUKABFKAJEFNJKLAE")
+
       return { token, user };
     },
     login: async (parent, { email, password }) => {

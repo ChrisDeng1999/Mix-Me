@@ -13,7 +13,7 @@ const typeDefs = gql`
         _id: ID
         drinkName: String
         drinkAuthor: String
-        drinkIngredients: [ID]
+        drinkIngredients: [Ingredient]
         createdAt: String
         reviews: [Review]!
     }
@@ -56,7 +56,7 @@ const typeDefs = gql`
     type Query {
         users: [User]
         user(username: String!): User
-        drinks(username: String): [Drink]
+        drinks(username: String): User
         drink(drinkId: ID!): Drink
         Ingredient: [Ingredient]
         Spirit: [Spirit]

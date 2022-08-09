@@ -3,11 +3,11 @@ import { gql } from '@apollo/client';
 export const QUERY_INGREDIENT = gql`
 query Ingredient {
     Ingredient {
+      _id
       ingredientName
       ingredientType
       alcoholProof
       ingredientUrl
-      _id
     }
   }
 `
@@ -34,24 +34,21 @@ query Spirit {
 
 
   export const QUERY_DRINK = gql`
-  query Drink($username: String!) {
-    user(username: $username) {
+  query Drink($username: String) {
+    drinks(username: $username) {
       username
+      email
+      password
       drinks {
         drinkName
         drinkAuthor
         createdAt
         drinkIngredients {
           _id
-          ingredientType
           ingredientName
+          ingredientType
           alcoholProof
           ingredientUrl
-        }
-        reviews {
-          reviewText
-          reviewAuthor
-          createdAt
         }
       }
     }
