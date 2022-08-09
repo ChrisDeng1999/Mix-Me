@@ -6,6 +6,8 @@ const typeDefs = gql`
         username: String
         email: String
         password: String
+        description: String
+        userImg: String
         drinks: [Drink]!
     }
 
