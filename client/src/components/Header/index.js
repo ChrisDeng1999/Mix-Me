@@ -12,7 +12,7 @@ const Header = () => {
     
     return(
         <header>
-        <h1 className="headerSlogan">make something amazing, easily.</h1>
+        <h1 className="headerSlogan">Make something amazing, easily.</h1>
         <li><a  className="btn btn-lg btn-secondary m-2 mixerButton"  href="/mixer">Mixer</a></li>
         <li><a  className="btn btn-lg btn-dark m-2 homeButton"  href="/">Home</a></li>
         {Auth.loggedIn() ? (

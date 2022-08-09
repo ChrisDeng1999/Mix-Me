@@ -45,9 +45,10 @@ const Login = () => {
     };
 
     return (
+        <div className="homeImage">
         <form onSubmit={handleFormSubmit}>
             <div className="form-group">
-                <label htmlFor="usr">Email:</label>
+                <label className="loginLabels" htmlFor="usr">EMAIL:</label>
                 <input
                     type="text"
                     className="form-control"
@@ -58,7 +59,7 @@ const Login = () => {
                 </input>
             </div>
             <div className="form-group">
-                <label htmlFor="pwd">Password:</label>
+                <label className="loginLabels" htmlFor="pwd">PASSWORD:</label>
                 <input
                     type="password"
                     className="form-control mb-3"
@@ -67,10 +68,12 @@ const Login = () => {
                     onChange={handleChange}></input>
             </div>
             <Button
+                className="submitLoginButton"
                 type='submit'
                 variant="primary"
                 onClick={postLogin} >Submit</Button>
         </form>
+        </div>
     )
 }
 
