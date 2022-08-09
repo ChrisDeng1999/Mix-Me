@@ -47,7 +47,7 @@ const Login = () => {
     return (
         <div className="homeImage">
         <form onSubmit={handleFormSubmit}>
-            <div className="form-group">
+            <div className="form-group w-25">
                 <label className="loginLabels" htmlFor="usr">EMAIL:</label>
                 <input
                     type="text"
@@ -58,7 +58,7 @@ const Login = () => {
                     onChange={handleChange}>
                 </input>
             </div>
-            <div className="form-group">
+            <div className="form-group w-25">
                 <label className="loginLabels" htmlFor="pwd">PASSWORD:</label>
                 <input
                     type="password"

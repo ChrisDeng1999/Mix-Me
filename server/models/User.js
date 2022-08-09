@@ -19,6 +19,8 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  description: String,
+  userImg: String,
   drinks: [
     {
       type: Schema.Types.ObjectId,

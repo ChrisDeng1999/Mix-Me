@@ -4,24 +4,35 @@ import {Container, Row, Col, Card} from "react-bootstrap"
 // import 'animate.css';
 import './DrinkMaster.css'
 import image from './images/Mixercup.jpg'
+import { useMutation } from '@apollo/client'
+import { ADD_DRINK } from '../../utils/mutations';
+import Auth from '../../utils/auth';
 
-const test = document.getElementsByClassName("test");
+
+
 const cards = document.getElementsByClassName("card")
 
 
-const DrinkMixer  = ({newIngredients, filterIngredients}) => {
+const DrinkMixer  = ({newIngredients}) => {
+
+    const [drinkName, setDrinkName] = useState ("")
+    const [ingredientNumber, setIngredientNumber] = useState ([])
+
     
 
-    console.log(newIngredients)
-    function addAnimation () {
-            
-        for (let i = 0; i < cards.length; i++) {
-                cards[i].classList.add('animate__animated');
-                cards[i].classList.add('animate__bounceOutDown');
-            }
-    }
+    const [addDrink, { error }] = useMutation(ADD_DRINK) 
 
-    function createElement (num, name, url, j) {
+    useEffect (() => {
+        const tempArr = newIngredients.map(ing => ing.id)
+        console.log(tempArr)
+        setIngredientNumber(tempArr);
+    }, [drinkName])
+
+
+    console.log(newIngredients)
+
+
+    function createElement (num, name, url) {
    
         const jsxArray = [];
     
@@ -50,61 +61,46 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
             );
         }}
 
-        // const [items, setItems] = useState();
-
-
-        // console.log(newIngredients)
     
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+            
+        for (let i = 0; i < cards.length; i++) {
+                cards[i].classList.add('animate__animated');
+                cards[i].classList.add('animate__bounceOutDown');
+            }
+
     
-        // function createElement (num, name, url, j) {
-            
-        //     console.log(j);
-        //     const jsxArray = [];
-            
+    try {
+    console.log(drinkName)
+    console.log(ingredientNumber)
+    console.log(Auth.getProfile().data.username);
+      const { data } = await addDrink({
+        
+        variables: {
+            drinkName: drinkName,
+            drinkIngredients: ingredientNumber,
+            drinkAuthor: Auth.getProfile().data.username,
+        },
+       
+    });
+        console.log(data);
+      setDrinkName('');
+    } catch (err) {
+      console.error(err);
+    }
+
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    if (name === 'drinkName' && value.length <= 20) {
+      setDrinkName(value);
+    }
+  };
     
-
-        //     if (num > 1) {
-            
-        //         for (let i = 0; i < num; i++) {
-        //             console.log(jsxArray) 
-        //             jsxArray.push(     
-        //             <Col className = "mt-3">
-        //             <Card> 
-        //             {/* <Card onClick = {() => filterIngredients(j)}>    */}
-        //             <img className = "ingBox" src = {url}/> 
-        //                 <p>{name}</p>
-        //             <button onClick = {() => addAnimation()}>Add Me!</button>      
-        //             </Card> 
-        //             </Col>
-        //               )
-        //             function addAnimation () {
-                
-        //                 jsxArray.filter(( jsxArray[0] !== 0))
-                    
-        //                 return jsxArray     
-        //                }
-        //             } return jsxArray;
-        //     } else {
-        //         return (            
-        //         <Col className = "mt-3">
-        //         <Card>   
-        //         <img className = "ingBox" src = {url}/>  
-        //             <p >{name}</p>
-        //             <button onClick = {() => addAnimation()}>Add Me!</button> 
-        //         </Card> 
-        //         </Col> 
-        //         )
-        //         function addAnimation () {
-                
-        //             jsxArray.filter(( jsxArray[0] !== 0))
-                
-        //             return jsxArray     
-        //            };
-        //     }
-
-
-    // }
-
     return (
         <div> 
         <div>
@@ -120,14 +116,42 @@ const DrinkMixer  = ({newIngredients, filterIngredients}) => {
             
             </Row>
 
+            <form>
+            <div>
+              <textarea
+                name="drinkName"
+                placeholder="Name your drink :D"
+                value={drinkName}
+                className="form-input w-100"
+                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+
+            {error && (
+              <div className="col-12 my-3 bg-danger text-white p-3">
+                {error.message}
+              </div>
+            )}
+          </form>
+
         <div className="row"> 
             <div className="col"> 
                 <div >  
-                <button className="center" onClick = {() => addAnimation()}><img src= { image } className = "mixerBtn" ></img></button>
+                <button 
+                className="center" 
+                type="submit"
+                onClick = {handleFormSubmit}>
+                    <img src= { image } className = "mixerBtn" >
+                    </img>
+                    </button>
                 </div>
             </div>
-            </div>
+            
 
+        </div>
+
+            
 
             </Container>
         </div>

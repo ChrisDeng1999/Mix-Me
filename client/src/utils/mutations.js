@@ -23,3 +23,15 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_DRINK = gql `
+mutation Mutation($drinkName: String, $drinkIngredients: [ID], $drinkAuthor: String) {
+  addDrink(drinkName: $drinkName, drinkIngredients: $drinkIngredients, drinkAuthor: $drinkAuthor) {
+    drinkName
+    drinkAuthor
+    drinkIngredients {
+      _id
+    }
+  }
+}
+`;

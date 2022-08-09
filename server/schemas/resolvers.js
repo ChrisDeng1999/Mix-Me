@@ -14,7 +14,7 @@ const resolvers = {
     },
     drinks: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Drink.find(params).sort({ createdAt: -1 });
+      return User.findOne(params).sort({ createdAt: -1 }).populate('drinks').populate({path: "drinks", populate: "drinkIngredients"});
     },
     drink: async (parent, { thoughtId }) => {
       return Drink.findOne({ _id: thoughtId });
@@ -60,7 +60,25 @@ const resolvers = {
         ingredientList,
         spiritList
       })
-    }
+    },
+    addDrink: async (parent, { drinkName, drinkIngredients, drinkAuthor }) => {
+      
+      
+        const drinks = await Drink.create({
+          drinkName,
+          drinkIngredients,
+          drinkAuthor,
+        });
+
+        await User.findOneAndUpdate(
+          { username: drinkAuthor },
+          { $addToSet: { drinks: drinks._id } }
+        );
+
+        return drinks;
+      
+     
+    },
   }
 };
 

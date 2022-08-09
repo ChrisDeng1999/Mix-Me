@@ -1,69 +1,69 @@
 [
   {
-    "spiritName": "London Dry Gin",
+    "spiritName": "London Dry Gin - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/Beefeater__26942_offvpf.jpg"
   },
   {
-    "spiritName": "Vodka",
+    "spiritName": "Vodka - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
-    "spiritUrl": "https://res.cloudinary.com/cdeng1999/image/upload/v1657826538/sqb3japwl6ktwdinmpf7.jpg"
+    "spiritUrl": "https://res.cloudinary.com/cdeng1999/image/upload/v1660011366/bc97bcc2-39f0-41b7-bdbe-1df866cbb5cd.15dd929bae999fc64f0875ab3dac53f8_wokjaa.jpg"
   },
   {
-    "spiritName": "White Rum",
+    "spiritName": "White Rum - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/white_rum_ybuhuv.jpg"
   },
   {
-    "spiritName": "Golden Rum",
+    "spiritName": "Golden Rum - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905810/goldrum_e8xwoc.jpg"
   },
   {
-    "spiritName": "Cognac V.S.O.P.",
+    "spiritName": "Cognac V.S.O.P. - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905810/congac_jiyxul.jpg"
   },
   {
-    "spiritName": "Bourbon Whiskey",
+    "spiritName": "Bourbon Whiskey - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/Bourbon_pptcdb.jpg"
   },
   {
-    "spiritName": "Scotch Whiskey",
+    "spiritName": "Scotch Whiskey - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/scotch_vfgc9h.jpg"
   },
   {
-    "spiritName": "Straight Rye Whiskey",
+    "spiritName": "Straight Rye Whiskey - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905810/rye_whiskey_alr6fk.webp"
   },
   {
-    "spiritName": "Tequila Reposado",
+    "spiritName": "Tequila Reposado - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/1800-repo_eac50130-8869-4ab3-a0f0-f65860251429_1200x1200_jckfak.webp"
   },
   {
-    "spiritName": "Tequila Blanco",
+    "spiritName": "Tequila Blanco - 2 fl oz",
     "spiritType": "Spirit",
     "spiritPortion": "2 Fl. Oz.",
     "alcoholProof": 80,
@@ -71,104 +71,104 @@
   },
   {
     "spiritName": "Triple Sec",
-    "spiritType": "Secondary Spirit",
+    "spiritType": "Secondary Spirit - 1 fl oz",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 60,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905812/tripple_sec_hhijrm.webp"
   },
   {
-    "spiritName": "Dry Vermouth",
+    "spiritName": "Dry Vermouth - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 35,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905812/vermouth_ekxrmb.jpg"
   },
   {
-    "spiritName": "Grand Marnier Liqueur",
+    "spiritName": "Grand Marnier Liqueur - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 80,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/ci-grand-marnier-cordon-rouge-105a55cc6f931975_jvkook.jpg"
   },
   {
-    "spiritName": "Brut Champagne",
+    "spiritName": "Brut Champagne - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/BrutChamp_zazcqb.jpg"
   },
   {
-    "spiritName": "Coffee Liqueur",
+    "spiritName": "Coffee Liqueur - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/coffeeliquor_nx8igr.jpg"
   },
   {
-    "spiritName": "Calvados Apple Brandy",
+    "spiritName": "Calvados Apple Brandy - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 60,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/apple_brandy_qqbtxi.jpg"
   },
   {
-    "spiritName": "Chartreuse Verte",
+    "spiritName": "Chartreuse Verte - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 110,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905810/chatvert_byyaai.png"
   },
   {
-    "spiritName": "Irish Cream Liqueur",
+    "spiritName": "Irish Cream Liqueur - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/irishcream_g6wiao.jpg"
     },
   {
-    "spiritName": "Fino Sherry",
+    "spiritName": "Fino Sherry - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 30,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905812/fino_d0sztr.jpg"
   },
   {
-    "spiritName": "Port Wine",
+    "spiritName": "Port Wine - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905812/portwine_fazetv.jpg"
     },
   {
-    "spiritName": "Sauvignon Blanc",
+    "spiritName": "Sauvignon Blanc - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/SavBlanc_jp90ul.jpg"
   },
   {
-    "spiritName": "Pisco",
+    "spiritName": "Pisco - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 90,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905810/Pisco_yrghhp.jpg"
   },
   {
-    "spiritName": "Sake",
+    "spiritName": "Sake - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 40,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905812/Sake_x0mi2x.jpg"
   },
   {
-    "spiritName": "Prosecco Sparkline Wine",
+    "spiritName": "Prosecco Sparkline Wine - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 24,
     "spiritUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659905811/Presseco_vcqkxz.jpg"
   },
   {
-    "spiritName": "Cointreau",
+    "spiritName": "Cointreau - 1 fl oz",
     "spiritType": "Secondary Spirit",
     "spiritPortion": "1 Fl. Oz.",
     "alcoholProof": 80,

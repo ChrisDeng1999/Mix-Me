@@ -1,15 +1,22 @@
-import { rewriteURIForGET } from "@apollo/client";
+
 import React, { useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 // import { Navigate, useParams } from 'react-router-dom';
 // import { useQuery } from '@apollo/client';
-
-// import DrinkList from '../components/DrinkList';
-
-// import { QUERY_USER, QUERY_ME } from '../utils/queries';
-
+import { useQuery } from '@apollo/client';
+import { QUERY_DRINK } from '../utils/queries';
 import Auth from "../utils/auth";
 const Profile = () => {
+  const { loading, data } = useQuery(QUERY_DRINK, {
+    variables: { username: Auth.getProfile().data.username },
+  });
+
+
+  const user = data?.drinks.drinks || []
+
+  useEffect (() => {
+    console.log(user)
+  }, [user])
   function uploadProfilePic() {
     var myWidget = window.cloudinary.createUploadWidget(
       {
@@ -19,6 +26,9 @@ const Profile = () => {
       (error, result) => {
         if (!error && result && result.event === "success") {
           console.log("Done! Here is the image info: ", result.info);
+         if (Auth.getToken() == null){
+              return <Navigate to="/" />;
+            }
         }
       }
     );
@@ -50,11 +60,7 @@ const Profile = () => {
       <h3>Username</h3>
       <p>{Auth.getProfile().data.username}</p>
       <h3>Drinks Created</h3>
-      <ul>
-        <li>Vodka Soda</li>
-        <li>Rum and Coke</li>
-      </ul>
-    </div>
+      </div>
   );
 };
 
