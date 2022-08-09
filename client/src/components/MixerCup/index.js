@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import 'animate.css';
+// import 'animate.css';
 
 const MixerCup = () => {
    const [mixCup, setMixCup] = useState()

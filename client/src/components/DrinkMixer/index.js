@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import {Container, Row, Col, Card} from "react-bootstrap"
-import 'animate.css';
+// import 'animate.css';
 import './DrinkMaster.css'
 import image from './images/Mixercup.jpg'
 
