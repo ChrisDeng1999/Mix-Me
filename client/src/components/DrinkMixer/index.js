@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import {Container, Row, Col, Card} from "react-bootstrap"
-// import 'animate.css';
-import './DrinkMaster.css'
+import 'animate.css';
 import image from './images/Mixercup.jpg'
 import { useMutation } from '@apollo/client'
 import { ADD_DRINK } from '../../utils/mutations';
@@ -42,19 +41,18 @@ const DrinkMixer  = ({newIngredients}) => {
             for (let i = 0; i < num; i++) {
                 console.log(jsxArray) 
                 jsxArray.push(     
-                <Col className = "mt-3">
-                <Card> 
-                {/* <Card onClick = {() => filterIngredients(j)}>    */}
-                <img className = "ingBox" src = {url}/> 
+                <Col>
+                <Card className = "cardBox"> 
+                <img src = {url}/> 
                     <p>{name}</p>  
                 </Card> 
                 </Col>
                 )} return jsxArray;
         } else {
             return (            
-            <Col className = "mt-3">
-            <Card>   
-            <img className = "ingBox" src = {url}/>  
+            <Col>
+            <Card className = "cardBox">   
+            <img src = {url}/>  
                 <p >{name}</p>
             </Card> 
             </Col>  
@@ -129,21 +127,20 @@ const DrinkMixer  = ({newIngredients}) => {
             </div>
 
             {error && (
-              <div className="col-12 my-3 bg-danger text-white p-3">
+              <div className = "red">
                 {error.message}
               </div>
             )}
           </form>
 
         <div className="row"> 
-            <div className="col"> 
-                <div >  
+            <div className="col centerMixer"> 
+                <div className = "mixerBox">  
                 <button 
                 className="center" 
                 type="submit"
                 onClick = {handleFormSubmit}>
-                    <img src= { image } className = "mixerBtn" >
-                    </img>
+                    <img src= { image } className = "mixerBox"></img>
                     </button>
                 </div>
             </div>

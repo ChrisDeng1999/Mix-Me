@@ -4,7 +4,7 @@ const dateFormat = require('../utils/dateFormat');
 const drinkSchema = new Schema({
     drinkName: {
         type: String,
-        required: 'You need to name your drink dumbass!',
+        required: 'You need to name your drink!',
         minlength: 1,
         maxlength: 280,
         trim: true,
