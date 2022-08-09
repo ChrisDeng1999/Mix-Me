@@ -25,12 +25,13 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_DRINK = gql `
-mutation addDrink($drinkName: String, $drinkIngredients: [ID], $drinkAuthor: String) {
+mutation Mutation($drinkName: String, $drinkIngredients: [ID], $drinkAuthor: String) {
   addDrink(drinkName: $drinkName, drinkIngredients: $drinkIngredients, drinkAuthor: $drinkAuthor) {
-    _id
     drinkName
     drinkAuthor
-    drinkIngredients
+    drinkIngredients {
+      _id
+    }
   }
 }
 `;

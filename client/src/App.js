@@ -44,7 +44,7 @@ function App() {
       <Router>
         <div className="homePage flex-column justify-flex-start min-100-vh">
           <Header />
-          <div className="container-fluid">
+          <div>
             <Routes>
               <Route 
                 path="/" 
