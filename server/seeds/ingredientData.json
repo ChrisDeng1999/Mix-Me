@@ -1,405 +1,405 @@
 [
     {
-      "ingredientName": "Simple Syrup",
+      "ingredientName": "Simple Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/simple_dv7osr.jpg"
     },
     {
-      "ingredientName": "Apple Juice",
+      "ingredientName": "Apple Juice - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/applejuice_gkraly.jpg"
     },
     {
-      "ingredientName": "Pomegranate Grenadine",
+      "ingredientName": "Pomegranate Grenadine - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996234/Pom_Juice_mgfvbl.jpg"
     },
     {
-      "ingredientName": "Honey",
+      "ingredientName": "Honey - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/honey_jen62z.jpg"
     },
     {
-      "ingredientName": "Almond Syrup",
+      "ingredientName": "Almond Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/almond_syrup_n9y8q9.jpg"
     },
     {
-      "ingredientName": "Maple Syrup",
+      "ingredientName": "Maple Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/maple_v842c8.jpg"
     },
     {
-      "ingredientName": "Rasberry Syrup",
+      "ingredientName": "Rasberry Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996232/Rasberry_wzsrzl.jpg"
     },
     {
-      "ingredientName": "Strawberry Syrup",
+      "ingredientName": "Strawberry Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996235/Strawberry_a3d4if.jpg"
     },
     {
-      "ingredientName": "Vanilla Syrup",
+      "ingredientName": "Vanilla Syrup - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659997549/vanilla_asxh7a.jpg"
     },
     {
-      "ingredientName": "Coconut Syrup", 
+      "ingredientName": "Coconut Syrup - 0.5 fl oz", 
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/coconut_ognnjw.jpg"
     },
     {
-      "ingredientName": "Grenadine",
+      "ingredientName": "Grenadine - 0.5 fl oz",
       "ingredientType": "Sweet",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996234/gren_ftfrfi.jpg"
     },
     {
-      "ingredientName": "Lime Juice",
+      "ingredientName": "Lime Juice - 0.5 fl oz",
       "ingredientType": "Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996231/Lime_Juice_waowkw.jpg"
     },
     {
-      "ingredientName": "Lemon Juice",
+      "ingredientName": "Lemon Juice - 0.5 fl oz",
       "ingredientType": "Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Lemon_Juice_g6uriv.jpg"
     },
     {
-      "ingredientName": "Cranberry Juice",
+      "ingredientName": "Cranberry Juice - 0.5 fl oz",
       "ingredientType": "Sweet & Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996225/Cranberry_Juice_yx0pz3.jpg"
     },
     {
-      "ingredientName": "Pink Grapefruit Juice",
+      "ingredientName": "Pink Grapefruit Juice - 0.5 fl oz",
       "ingredientType": "Sweet & Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/Pink_Grapefruit_Juice_ebargi.jpg"
     },
     {
-      "ingredientName": "Pineapple Juice",
+      "ingredientName": "Pineapple Juice - 0.5 fl oz",
       "ingredientType": "Sweet & Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996234/Pineapple_Juice_gaybzp.jpg"
     },
     {
-      "ingredientName": "Lime Cordial",
+      "ingredientName": "Lime Cordial - 0.5 fl oz",
       "ingredientType": "Sweet & Sour",
       "ingredientPortion": "0.5 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996228/Lime_Cordial_xpfhjx.jpg"
     },
     {
-      "ingredientName": "Angostura Aromatic Bitters",
+      "ingredientName": "Angostura Aromatic Bitters - 2 dashes",
       "ingredientType": "Bitters",
       "ingredientPortion": "2 Dashes",
       "alcoholProof": 80,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Angostura_Aromatic_Bitters_ldqcb8.jpg"
     },
     {
-      "ingredientName": "Orange Bitters",
+      "ingredientName": "Orange Bitters - 2 dashes",
       "ingredientType": "Bitters",
       "ingredientPortion": "2 Dashes",
       "alcoholProof": 18,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996233/Orange_Bitters_b2bhjf.jpg"
     },
     {
-      "ingredientName": "Peyaud's Aromatic Bitters",
+      "ingredientName": "Peyaud's Aromatic Bitters - 2 dashes",
       "ingredientType": "Bitters",
       "ingredientPortion": "2 Dashes",
       "alcoholProof": 70,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Peyaud_s_Aromatic_Bitters_wdkwgy.jpg"
     },
     {
-      "ingredientName": "Espresso",
+      "ingredientName": "Espresso - 1 fl oz",
       "ingredientType": "Bitters",
       "ingredientPortion": "1 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996226/Espresso_iwp80u.jpg"
     },
     {
-      "ingredientName": "Egg White",
+      "ingredientName": "Egg White - 1 egg white",
       "ingredientType": "Savory",
       "ingredientPortion": "1 Egg White",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Egg_White_pvnsnj.jpg"
     },
     {
-      "ingredientName": "Black Pepper",
+      "ingredientName": "Black Pepper - 1 tsp",
       "ingredientType": "Savory",
       "ingredientPortion": "1 TSP",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996238/Black_Pepper_osu5un.jpg"
     },
     {
-      "ingredientName": "Worcestershire Sauce",
+      "ingredientName": "Worcestershire Sauce - 2 dashes",
       "ingredientType": "Savory",
       "ingredientPortion": "2 Dashes",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Worcestershire_Sauce_u1ud4v.jpg"
     },
     {
-      "ingredientName": "Tabasco",
+      "ingredientName": "Tabasco - 2 dashes",
       "ingredientType": "Savory",
       "ingredientPortion": "2 Dashes",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Tabasco_cmcn1h.jpg"
     },
     {
-      "ingredientName": "Whole Egg",
+      "ingredientName": "Whole Egg - 1 whole egg",
       "ingredientType": "Savory",
       "ingredientPortion": "1 Whole Egg",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996227/Whole_Egg_tmszt4.jpg"
     },
     {
-      "ingredientName": "Tomato Juice",
+      "ingredientName": "Tomato Juice - 2 fl oz",
       "ingredientType": "Savory",
       "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996227/Tomato_Juice_y9tykp.jpg"
     },
     {
-      "ingredientName": "Club Soda",
+      "ingredientName": "Club Soda - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Club_Soda_xy20d7.jpg"
     },
     {
-      "ingredientName": "Orange Juice",
+      "ingredientName": "Orange Juice - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996233/Orange_Juice_jltmf2.jpg"
     },
     {
-      "ingredientName": "Cream",
+      "ingredientName": "Cream - 2 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Cream_e6eapa.jpg"
     },
     {
-      "ingredientName": "Milk",
+      "ingredientName": "Milk - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996226/Milk_zao8m6.jpg"
     },
     {
-      "ingredientName": "Ginger Ale",
+      "ingredientName": "Ginger Ale - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/Ginger_Ale_yus61u.jpg"
     },
     {
-      "ingredientName": "Lemonade",
+      "ingredientName": "Lemonade - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996236/Lemonade_mhbd7b.jpg"
     },
     {
-      "ingredientName": "Sprite",
+      "ingredientName": "Sprite - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/Sprite_nazxt5.jpg"
     },
     {
-      "ingredientName": "Half & Half",
+      "ingredientName": "Half & Half - 2 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "2 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/Half_Half_hoj4wt.jpg"
     },
     {
-      "ingredientName": "Tonic Water",
+      "ingredientName": "Tonic Water - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Tonic_Water_sgd5wq.jpg"
     },
     {
-      "ingredientName": "Coke",
+      "ingredientName": "Coke - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Coke_wam2nc.jpg"
     },
     {
-      "ingredientName": "Pink Lemonade",
+      "ingredientName": "Pink Lemonade - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996226/Pink_Lemonade_vfnhuh.jpg"
     },
     {
-      "ingredientName": "Coconut Water",
+      "ingredientName": "Coconut Water - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/Coconut_Water_rptjbv.jpg"
     },
     {
-      "ingredientName": "Water",
+      "ingredientName": "Water - 4 fl oz",
       "ingredientType": "Mixers",
       "ingredientPortion": "4 Fl. Oz.",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/Water_ptoahm.jpg"
     },
     {
-      "ingredientName": "Fresh Mint Leaves",
+      "ingredientName": "Fresh Mint Leaves - 2 sprigs",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Sprigs",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Fresh_Mint_Leaves_byvnnp.jpg"
     },
     {
-      "ingredientName": "Fresh Rasberries",
+      "ingredientName": "Fresh Rasberries - 6 berries",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "6 Berries",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/Fresh_Raspberries_by3yjh.jpg"
     },
     {
-      "ingredientName": "Fresh Basil Leaves",
+      "ingredientName": "Fresh Basil Leaves - 2 sprigs",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Sprigs",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/Fresh_Basil_Leaves_vgmsxt.jpg"
     },
     {
-      "ingredientName": "Fresh Strawberries",
+      "ingredientName": "Fresh Strawberries - 2 berries",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Berries",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996226/Fresh_Strawberries_dsntnf.jpg"
     },
     {
-      "ingredientName": "Fresh Ginger",
+      "ingredientName": "Fresh Ginger - 1 tsp shaved",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 TSP Shaved",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996227/Fresh_Ginger_hhvnvx.jpg"
     },
     {
-      "ingredientName": "Passionfruit",
+      "ingredientName": "Passionfruit - 1/4 cup",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1/4 Cup",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Passionfruit_fitgfm.jpg"
     },
     {
-      "ingredientName": "Celery Stalk",
+      "ingredientName": "Celery Stalk - 1 stalk",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Stalk",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996219/Celery_Stalk_xjuz5m.jpg"
     },
     {
-      "ingredientName": "Sugar Cube",
+      "ingredientName": "Sugar Cube - 1 cube",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Cube",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Sugar_ffgcs5.jpg"
     },
     {
-      "ingredientName": "Stuffed Green Olive",
+      "ingredientName": "Stuffed Green Olive - 2 olives",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "2 Olives",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996237/Stuffed_Green_Olive_epkcdv.jpg"
     },
     {
-      "ingredientName": "Salt",
+      "ingredientName": "Salt - 1 tsp",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 TSP",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Salt_zw9o4s.jpg"
     },
     {
-      "ingredientName": "Orange Rind Twist",
+      "ingredientName": "Orange Rind Twist - 1 twist",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Twist",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996227/Orange_Rind_Twist_lnnype.jpg"
     },
     {
-      "ingredientName": "Lemon Rind Twist",
+      "ingredientName": "Lemon Rind Twist - 1 twist",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Twist",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996234/Lemon_Rind_Twist_ntag8x.jpg"
     },
     {
-      "ingredientName": "Orange Slice",
+      "ingredientName": "Orange Slice - 1 slice",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Slice",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996234/Orange_Slice_zszojd.jpg"
     },
     {
-      "ingredientName": "Lime Wedge",
+      "ingredientName": "Lime Wedge - 1 wedge",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Wedge",
       "alcoholProof": 0,
       "ingredientUrl":""
     },
     {
-      "ingredientName": "Lemon Wedge",
+      "ingredientName": "Lemon Wedge - 1 wedge",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 Wedge",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996230/Lemon_Wedge_v7n0q5.jpg"
     },
     {
-      "ingredientName": "Cloves",
+      "ingredientName": "Cloves - 1 wedge",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 TSP",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996218/Cloves_kmvlgj.jpg"
     },
     {
-      "ingredientName": "Cinnamon",
+      "ingredientName": "Cinnamon - 1 tsp",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "1 TSP",
       "alcoholProof": 0,
       "ingredientUrl":"https://res.cloudinary.com/dniag1t6z/image/upload/v1659996229/Cinnamon_rexd45.jpg"
     },
     {
-      "ingredientName": "Coffee Beans",
+      "ingredientName": "Coffee Beans - 6 beans",
       "ingredientType": "Accoutrements",
       "ingredientPortion": "6 Beans",
       "alcoholProof": 0,
