@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
 // import { Navigate, useParams } from 'react-router-dom';
 // import { useQuery } from '@apollo/client';
@@ -43,21 +43,25 @@ const Profile = () => {
     return <Navigate to="/" />;
   }
   return (
-    <div>
-      <h1>Profile Page</h1>
-      <h2> Edit Profile</h2>
+    <div className="homeImage">
+      <h1 className="profileTag">Profile Page</h1>
+      <h2 className="profileTag"> Edit Profile</h2>
       <button
         onClick={uploadProfilePic}
         id="upload_widget"
         class="cloudinary-button"
       >
-        Upload files
+        Upload Avatar 
       </button>
-      <h3>Description</h3>
-      <textarea></textarea>
-      <h3>Username</h3>
-      <p>{Auth.getProfile().data.username}</p>
-      <h3>Drinks Created</h3>
+      <h3 className="profileTag">Description</h3>      
+      <textarea className="textArea"></textarea>
+      <h3 className="profileTag">Username</h3>
+      <p className="profileTag">{Auth.getProfile().data.username}</p>
+      <h3 className="profileTag">Drinks Created</h3>
+      <ul>
+        <li className="profileTag">Vodka Soda</li>
+        <li className="profileTag">Rum and Coke</li>
+      </ul>
     </div>
   );
 };

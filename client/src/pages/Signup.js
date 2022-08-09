@@ -88,7 +88,7 @@ const Signup = () => {
                 </input>
             </div>
             <Button
-                className="submitSignUpButton"
+                className="Button"
                 type='submit'
                 variant="primary"
                 onClick={postSignUp}>Submit</Button>

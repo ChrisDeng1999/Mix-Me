@@ -68,7 +68,7 @@ const Login = () => {
                     onChange={handleChange}></input>
             </div>
             <Button
-                className="submitLoginButton"
+                className="Button"
                 type='submit'
                 variant="primary"
                 onClick={postLogin} >Submit</Button>
