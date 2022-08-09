@@ -27,11 +27,6 @@ const Profile = () => {
         <li>Vodka Soda</li>
         <li>Rum and Coke</li>
       </ul>
-      <h2>List of Drinks</h2>
-      <ul>
-        <li>Bloody Mary</li>
-        <li>Corkscrew</li>
-      </ul>
     </div>
   );
 };
