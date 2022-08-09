@@ -14,18 +14,18 @@ const Profile = () => {
     return <Navigate to="/" />;
   }
   return (
-    <div>
-      <h1>Profile Page</h1>
-      <h2> Edit Profile</h2>
-      <button>Upload Photo</button>
-      <h3>Description</h3>
+    <div className="homeImage">
+      <h1 className="profilePageTag">Profile Page</h1>
+      <h2 className="profileEditTag"> Edit Profile</h2>
+      <button className="loginButton">Upload Photo</button>
+      <h3 className="profileDescriptionTag">Description</h3>
       <textarea></textarea>
-      <h3>Username</h3>
-      <p>{Auth.getProfile().data.username}</p>
-      <h3>Drinks Created</h3>
+      <h3 className="profileNameLabelTag">Username</h3>
+      <p className="profileNameTag">{Auth.getProfile().data.username}</p>
+      <h3 className="profileDrinksTag">Drinks Created</h3>
       <ul>
-        <li>Vodka Soda</li>
-        <li>Rum and Coke</li>
+        <li className="profileFirstDrinkTag">Vodka Soda</li>
+        <li className="profileSecondDrinkTag">Rum and Coke</li>
       </ul>
     </div>
   );

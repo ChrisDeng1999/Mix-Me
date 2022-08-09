@@ -20,7 +20,7 @@ const Header = () => {
               <Link className="btn btn-lg btn-info m-2 specProfileButton" to="/profile">
                 {Auth.getProfile().data.username}'s profile
               </Link>
-              <button className="btn btn-lg btn-light m-2 logoutButton" onClick={logout}>
+              <button className="btn btn-lg btn-light m-2 logOutButton" onClick={logout}>
                 Logout
               </button>
             </>
