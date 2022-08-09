@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Navigate, useParams } from "react-router-dom";
-// import { Navigate, useParams } from 'react-router-dom';
-// import { useQuery } from '@apollo/client';
-import { useQuery } from "@apollo/client";
-import { QUERY_DRINK } from "../utils/queries";
-import Auth from "../utils/auth";
+import React, { useEffect } from "react";
+import { Navigate, useParams } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { QUERY_DRINK } from '../utils/queries';
+// import { useMutation } from '@apollo/client'
+// import { ADD_DESCRIPTION } from '../../utils/mutations';
+
+import Auth from '../utils/auth';
+
+
 const Profile = () => {
   const { loading, data } = useQuery(QUERY_DRINK, {
     variables: { username: Auth.getProfile().data.username },

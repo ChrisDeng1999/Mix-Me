@@ -35,3 +35,19 @@ mutation Mutation($drinkName: String, $drinkIngredients: [ID], $drinkAuthor: Str
   }
 }
 `;
+
+export const ADD_DESCRIPTION = gql ` 
+mutation addDescription($description: String) {
+  addDescription(description: $description) {
+    description
+  }
+}
+`
+
+export const ADD_IMG = gql ` 
+mutation addImg($userImg: String) {
+  addImg(userImg: $userImg) {
+    userImg
+  }
+}
+`
