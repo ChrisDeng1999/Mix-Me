@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_DRINK } from '../utils/queries';
@@ -13,11 +13,25 @@ const Profile = () => {
     variables: { username: Auth.getProfile().data.username },
   });
 
+
   const user = data?.drinks.drinks || [];
 
+  const [allDrinks, setAllDrinks] = useState ([])
+
   useEffect(() => {
-    console.log(user);
+    const getDrinks = user.map(drink => drink.drinkName)
+    console.log(getDrinks)
+    setAllDrinks(getDrinks)
   }, [user]);
+
+  
+
+  // function getDrinks () {
+  //   user.map(drink => drink.drinkName{
+
+  //   })
+  // }
+
   function uploadProfilePic() {
     var myWidget = window.cloudinary.createUploadWidget(
       {
@@ -62,8 +76,11 @@ const Profile = () => {
       <p className="profileTag">{Auth.getProfile().data.username}</p>
       <h3 className="profileTag">Drinks Created</h3>
       <ul>
-        <li className="profileTag">Vodka Soda</li>
-        <li className="profileTag">Rum and Coke</li>
+        {allDrinks && allDrinks.map(drink => (
+          <li className="profileTag" key = {drink.id}>
+            {drink}
+          </li>
+        ))}
       </ul>
     </div>
   );
