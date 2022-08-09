@@ -4,6 +4,10 @@
     
 }
 
+.homePage {
+  background-color:#3f7f77;
+}
+
 .homeImage {
   height: 100vh;
   width: 100%;
@@ -19,11 +23,13 @@
   background-color:rgba(0, 0, 0, 0.5) !important;
   border-radius: 5px !important;
   padding: 5px;
+  margin-top: 6px;
 }
 
 .headerSlogan {
   color: #d59f59;
-  width: 30%;
+  width: 40%;
+  padding-left: 25px;
 }
 
 .profilePageTag {
@@ -44,6 +50,7 @@
 
 .navBarButtons {
   width: 30%;
+  margin-right: 0px;
 }
 
 .navBarButtons li {
