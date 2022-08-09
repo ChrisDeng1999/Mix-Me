@@ -18,10 +18,14 @@ const Profile = () => {
 
   const [allDrinks, setAllDrinks] = useState ([])
 
+  const [getImage, setGetImage] = useState ("")
+
+
   useEffect(() => {
     const getDrinks = user.map(drink => drink.drinkName)
     console.log(getDrinks)
     setAllDrinks(getDrinks)
+    
   }, [user]);
 
   
@@ -32,21 +36,28 @@ const Profile = () => {
   //   })
   // }
 
-  function uploadProfilePic() {
-    var myWidget = window.cloudinary.createUploadWidget(
+  function useUploadProfilePic(error, result) {
+  
+    // useEffect(()=>{
+      
+    // })
+   
+    const myWidget = window.cloudinary.createUploadWidget(
+    
       {
         cloudName: "dniag1t6z",
         uploadPreset: "gg1ohqd6",
       },
       (error, result) => {
         if (!error && result && result.event === "success") {
-          console.log("Done! Here is the image info: ", result.info);
-          if (Auth.getToken() == null) {
-            return <Navigate to="/" />;
-          }
-        }
+          const image = result.info.url 
+          console.log(image);
+          return image
+        } 
       }
     );
+
+    console.log(result);
 
     document.getElementById("upload_widget").addEventListener(
       "click",
@@ -64,7 +75,7 @@ const Profile = () => {
       <h1>{Auth.getProfile().data.username} Profile</h1>
       <h2 className="profileTag"> Edit Profile</h2>
       <button
-        onClick={uploadProfilePic}
+        onClick={useUploadProfilePic}
         id="upload_widget"
         class="cloudinary-button mb-4"
       >
