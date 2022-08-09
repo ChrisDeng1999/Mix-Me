@@ -80,12 +80,14 @@ const resolvers = {
      
     },
     addDescription: async (parent, { description }) => {
-      return User.findOneAndUpdate({description})
-
+      return User.findOneAndUpdate(
+        {description:description}
+        )
     },
     addImg: async (parent, { userImg }) => {
-      return User.findOneAndUpdate({userImg})
-
+      return User.findOneAndUpdate(
+        {userImg: userImg}
+      )
     },
 
   }
